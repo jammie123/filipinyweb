@@ -1,0 +1,90 @@
+@import "bulma/sass/utilities/_all";
+.trends {
+  &-content {
+    margin: 0px;
+  }
+  color: white;
+  &-item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    @include mobile {
+      margin-top: 2rem;
+    }
+    &--hotelmonth {
+      background-image: url("../../img/hotelmonth.png");
+      position: absolute;
+      top: -18px;
+      width: 150px;
+      height: 79px;
+      right: 41px;
+    }
+  }
+  &-card {
+    position: relative;
+    margin-top: 79px;
+    margin-bottom: 79px;
+    @include mobile {
+      margin: 0px;
+      margin: 3rem 0rem;
+      text-align: center;
+    }
+    margin-right: 32px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    &-info {
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: 300;
+      font-size: 13px;
+      @include mobile {
+        justify-content: center;
+      }
+      &-item {
+        padding: 4px 9px;
+        border-right: 1px solid #fff;
+        &:last-child {
+          border-right: 1px solid transparent;
+        }
+        &:first-child {
+          padding-left: 0px;
+        }
+      }
+    }
+    &-head {
+      display: flex;
+      flex-direction: column;
+    }
+    &-body {
+      margin-top: 38px;
+      display: flex;
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &-img {
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    &-desc {
+      font-size: 14px;
+      font-weight: 300;
+      margin-left: 26px;
+      display: flex;
+      flex-direction: column;
+      @include mobile {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 32px;
+      }
+      &-more {
+        margin-top: 37px;
+      }
+    }
+  }
+}

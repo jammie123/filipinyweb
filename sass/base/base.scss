@@ -1,0 +1,75 @@
+// Colors
+$text-green: #219f93;
+$text-dark: #202020;
+$yellow: #fdc61d !default;
+
+html {
+  background-color: #f0f0f0;
+  font-family: "azo-sans-web", sans-serif;
+}
+
+.columns:last-child {
+  margin-bottom: 0 !important;
+}
+
+h2 {
+  //   font-family: "Azo Sans";
+  font-size: 24px;
+  font-weight: 300;
+  margin: 30px 0px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 16px 0px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.is-green {
+  color: $text-green;
+}
+
+.is-white {
+  color: #fff;
+}
+.is-yellow {
+  color: #fdc61d;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.is-upper {
+  text-transform: uppercase;
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+
+.is-info{
+  font-weight: 300;
+}
+.bg-green {
+  background: $text-green;
+}
+.bg-green2 {
+  background: #007064;
+}
+
+.fw700{
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+}
+
+.button{
+  text-transform: uppercase;
+}

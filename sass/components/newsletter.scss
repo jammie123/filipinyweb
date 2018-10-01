@@ -1,0 +1,31 @@
+@import "bulma/sass/utilities/_all";
+.newsleter {
+  background-color: #303030;
+  padding: 56px 0px 35px 0px;
+  h2 {
+    font-size: 18px;
+  }
+  &-content {
+    width: 460px;
+    @include mobile {
+      width: 90%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    input {
+    display: flex;
+    align-items: center;
+      height: 50px;
+      padding-left: 2.5rem !important;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 14px !important;
+    }
+    .icon{
+        height: 100%;
+    }
+    .button {
+      height: 50px;
+    }
+  }
+}

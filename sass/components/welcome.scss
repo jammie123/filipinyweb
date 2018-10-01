@@ -1,0 +1,17 @@
+.welcome {
+  background-image: url("../../img/welcome.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: 50% 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-title {
+    font-size: 36px;
+    h2 {
+      font-family: "Alisha";
+      margin: 0px;
+      font-weight: 300;
+    }
+  }
+}

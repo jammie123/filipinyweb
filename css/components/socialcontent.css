@@ -1,0 +1,21 @@
+.social-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 21px; }
+  .social-icon .fb {
+    background-image: url("../../img/fb.png");
+    height: 34px;
+    width: 33px;
+    margin: 0px 7px; }
+  .social-icon .insta {
+    background-image: url("../../img/insta.png");
+    height: 34px;
+    width: 33px;
+    margin: 0px 7px; }
+
+.social-description {
+  margin-top: 40px;
+  margin-bottom: 90px; }
+  .social-description .content {
+    text-align: center;
+    margin: 0px auto; }

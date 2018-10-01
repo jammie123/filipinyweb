@@ -1,0 +1,52 @@
+.destination {
+  margin-bottom: 116px;
+  h2 {
+  }
+  &-content {
+    //     display: flex;
+    // justify-content: center;
+    &-item {
+      height: 160px;
+      position: relative;
+
+      &-title {
+        height: 37px;
+        width: 100%;
+        background-color: #ffffff;
+        opacity: 0.75;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        padding-left: 18px;
+        p {
+          font-size: 18px;
+        }
+      }
+      &-image {
+        img {
+          height: 160px;
+        }
+      }
+      &-image--hover {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        a {
+          position: absolute;
+          top: 45%;
+          right: 5%;
+        }
+        img {
+          height: 160px;
+        }
+      }
+      &:hover &-image--hover {
+        display: block;
+      }
+    }
+  }
+}
