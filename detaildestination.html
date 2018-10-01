@@ -20,18 +20,13 @@
         crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-
             // Check for click events on the navbar burger icon
             $(".navbar-burger").click(function () {
-
                 // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                 $(".navbar-burger").toggleClass("is-active");
                 $(".header-nav ul").toggleClass("is-active");
                 $(".header").toggleClass("active");
                 $(".header:not(.active)").toggleClass("active");
-
-                
-
             });
         });
         $(window).on("scroll", function () {
@@ -43,9 +38,6 @@
             }
         });
     </script>
-
-
-
 </head>
 
 <body>
@@ -94,41 +86,49 @@
         </div>
     </header>
     <!-- END HEADER -->
-    <section class="welcome welcome--home">
+    <section class="welcome welcome--destination">
+
         <div class="container">
             <div class="welcome-title">
-                <h1 class="is-white is-center fw700">Discover the most beautiful places</h1>
-                <h2 class="is-white is-center">in the Philippines!</h2>
+                <h1 class="is-white is-center fw700">BORACAY ISLAND
+                </h1>
+                <h2 class="is-white is-center"> Amazing Philippines</h2>
             </div>
         </div>
     </section>
     <!-- END WELCOME -->
-    <section class="search-hotel">
-        <div class="search-hotel-input">
-            <div class="field has-addons">
-                <div class="control has-icons-left is-expanded">
-                    <input class="input is-large" type="text" placeholder="find your destination or hotel">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-search"></i>
-                    </span>
+
+
+    <section class="slideshow">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-10-desktop is-12-mobile ">
+                    <div class="slideshow-content">
+                        <div class="slideshow-item">
+                            <img src="img/slideshow-dest.png" alt="">
+                        </div>
+                        <div class="slideshow-item">
+                            <img src="img/slideshow-dest.png" alt="">
+                        </div>
+                        <div class="slideshow-item">
+                            <img src="img/slideshow-dest.png" alt="">
+                        </div>
+                        <div class="slideshow-item">
+                            <img src="img/slideshow-dest.png" alt="">
+                        </div>
+                        <div class="slideshow-item">
+                            <img src="img/slideshow-dest.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="control">
-                    <a class="button is-large is-info">
-                        <span class="icon is-small is-left">
-                            <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </a>
+                <div class="column is-2-desktop is-12-mobile">
+                    <div class="share is-right"></div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- END SEARCH HOTEL -->
 
-    <section class="social-icon">
-        <div class="fb"></div>
-        <div class="insta"></div>
     </section>
-    <!-- END SOCAIL ICON -->
+    <!-- END SLIDESHOW -->
     <section class="social-description">
         <div class="container">
             <div class="content">

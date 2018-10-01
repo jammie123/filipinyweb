@@ -1,0 +1,79 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.trends {
+  color: white; }
+  .trends-content {
+    margin: 0px; }
+  .trends-item {
+    display: flex;
+    position: relative;
+    justify-content: center; }
+    @media screen and (max-width: 800px) {
+      .trends-item {
+        margin-top: 2rem; } }
+    .trends-item--hotelmonth {
+      background-image: url("../../img/hotelmonth.png");
+      position: absolute;
+      top: -18px;
+      width: 150px;
+      height: 79px;
+      right: 41px; }
+  .trends-card {
+    position: relative;
+    margin-top: 79px;
+    margin-bottom: 79px;
+    margin-right: 32px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px; }
+    @media screen and (max-width: 800px) {
+      .trends-card {
+        margin: 0px;
+        margin: 3rem 0rem;
+        text-align: center; } }
+    .trends-card-info {
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: 300;
+      font-size: 13px; }
+      @media screen and (max-width: 800px) {
+        .trends-card-info {
+          justify-content: center; } }
+      .trends-card-info-item {
+        padding: 4px 9px;
+        border-right: 1px solid #fff; }
+        .trends-card-info-item:last-child {
+          border-right: 1px solid transparent; }
+        .trends-card-info-item:first-child {
+          padding-left: 0px; }
+    .trends-card-head {
+      display: flex;
+      flex-direction: column; }
+    .trends-card-body {
+      margin-top: 38px;
+      display: flex; }
+      @media screen and (max-width: 800px) {
+        .trends-card-body {
+          flex-direction: column;
+          align-items: center; } }
+    .trends-card-img img {
+      width: 200px;
+      height: 200px; }
+    .trends-card-desc {
+      font-size: 14px;
+      font-weight: 300;
+      margin-left: 26px;
+      display: flex;
+      flex-direction: column; }
+      @media screen and (max-width: 800px) {
+        .trends-card-desc {
+          text-align: center;
+          margin-left: 0px;
+          margin-top: 32px; } }
+      .trends-card-desc-more {
+        margin-top: 37px; }

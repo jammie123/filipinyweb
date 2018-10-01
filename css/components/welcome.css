@@ -1,0 +1,18 @@
+.welcome {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: 50% 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .welcome--home {
+    background-image: url("../../img/welcome.jpg"); }
+  .welcome--destination {
+    background-image: url("../../img/detaildest.png"); }
+  .welcome-title {
+    font-size: 36px; }
+    .welcome-title h2 {
+      font-family: "Alisha";
+      margin: 0px;
+      font-weight: 300; }

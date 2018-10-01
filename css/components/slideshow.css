@@ -1,0 +1,9 @@
+.slideshow {
+  position: relative;
+  margin-top: 1rem; }
+  .slideshow-content {
+    display: flex; }
+  .slideshow-item {
+    width: 170px;
+    height: 113px;
+    margin-right: 11px; }

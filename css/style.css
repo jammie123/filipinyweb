@@ -2845,13 +2845,17 @@ th {
         color: #fdc61d; }
 
 .welcome {
-  background-image: url("../../img/welcome.jpg");
+  position: relative;
   height: 500px;
   background-size: cover;
   background-position: 50% 70%;
   display: flex;
   justify-content: center;
   align-items: center; }
+  .welcome--home {
+    background-image: url("../../img/welcome.jpg"); }
+  .welcome--destination {
+    background-image: url("../../img/detaildest.png"); }
   .welcome-title {
     font-size: 36px; }
     .welcome-title h2 {
@@ -3012,6 +3016,9 @@ a {
 .button {
   text-transform: uppercase; }
 
+.is-right {
+  float: right; }
+
 .social-icon {
   display: flex;
   justify-content: center;
@@ -3033,6 +3040,11 @@ a {
   .social-description .content {
     text-align: center;
     margin: 0px auto; }
+
+.share {
+  background: url("../../img/sharefb.png");
+  width: 68px;
+  height: 24px; }
 
 .destination {
   margin-bottom: 116px; }
@@ -3517,3 +3529,13 @@ a {
           text-align: center; } }
       .footer-content-item--copy a {
         color: #898989; }
+
+.slideshow {
+  position: relative;
+  margin-top: 1rem; }
+  .slideshow-content {
+    display: flex; }
+  .slideshow-item {
+    width: 170px;
+    height: 113px;
+    margin-right: 11px; }

@@ -1,5 +1,11 @@
 .welcome {
-  background-image: url("../../img/welcome.jpg");
+    position: relative;
+  &--home {
+    background-image: url("../../img/welcome.jpg");
+  }
+  &--destination {
+    background-image: url("../../img/detaildest.png");
+  }
   height: 500px;
   background-size: cover;
   background-position: 50% 70%;
