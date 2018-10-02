@@ -1,11 +1,12 @@
 .hotel {
-  background: url("../../img/hotelbg-gradient.png");
-  background-size: cover;
-  background-position: 50% 50%;
   text-align: center;
-  height: 700px;
   display: flex;
   align-items: center; }
+  .hotel--home {
+    height: 700px;
+    background: url("../../img/hotelbg-gradient.png");
+    background-size: cover;
+    background-position: 50% 50%; }
   .hotel .button {
     margin-top: 17px;
     margin-bottom: 80px; }
