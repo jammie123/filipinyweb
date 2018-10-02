@@ -1,0 +1,78 @@
+@import "../components/bulma/sass/utilities/_all";
+.destination-info {
+  &-map {
+    height: 631px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      width: 363px;
+      height: 631px;
+      content: "";
+      background: url("../../img/mapa_v_pozadi.png");
+      background-size: cover;
+      opacity: 0.8;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  &-image {
+    display: flex;
+    flex-direction: column;
+    img {
+      min-height: 230px;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.map {
+  &-info {
+    &-content {
+    }
+    &-text {
+      margin-top: 1.5rem;
+      padding: 3rem;
+      width: 100%;
+      box-shadow: 0 1px 10px 1px rgba(0, 1, 0, 0.22);
+      background-color: #ffffff;
+    }
+    &-morephoto {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+
+      @include mobile {
+        a {
+          margin: 0px auto;
+        }
+
+        width: 100%;
+      }
+      a {
+        color: #219f93;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 42px;
+        .icon i {
+          margin-left: 2rem;
+          font-size: 20px;
+          color: #fdc61d;
+          border: 1px solid #219f93;
+          border-radius: 50%;
+          padding: 0.3rem;
+        }
+      }
+    }
+  }
+}

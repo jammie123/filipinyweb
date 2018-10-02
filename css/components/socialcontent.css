@@ -1,3 +1,9 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
 .social-icon {
   display: flex;
   justify-content: center;
@@ -24,3 +30,6 @@
   background: url("../../img/sharefb.png");
   width: 68px;
   height: 24px; }
+  @media screen and (max-width: 800px) {
+    .share {
+      margin: 0px auto; } }

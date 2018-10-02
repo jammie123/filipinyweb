@@ -30,12 +30,15 @@
             });
         });
         $(window).on("scroll", function () {
-            if ($(window).scrollTop() > 50) {
-                $(".header").addClass("active");
-            } else {
-                //remove the background property so it comes transparent again (defined in your css)
-                $(".header").removeClass("active");
+            if ($(".navbar-burger:not(.active)")) {
+                if ($(window).scrollTop() > 50) {
+                    $(".header").addClass("active");
+                } else {
+                    //remove the background property so it comes transparent again (defined in your css)
+                    $(".header").removeClass("active");
+                }
             }
+
         });
     </script>
 </head>
@@ -45,7 +48,6 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header>
-
         <div class="header">
             <div class="header-brand">
                 <div class="header-brand-logo">
@@ -79,10 +81,6 @@
                     </li>
                 </ul>
             </div>
-
-
-
-        </div>
         </div>
     </header>
     <!-- END HEADER -->
@@ -102,7 +100,7 @@
     <section class="slideshow">
         <div class="container">
             <div class="columns is-multiline">
-                <div class="column is-10-desktop is-12-mobile ">
+                <div class="column is-10 is-12-mobile ">
                     <div class="slideshow-content">
                         <div class="slideshow-item">
                             <img src="img/slideshow-dest.png" alt="">
@@ -110,7 +108,7 @@
                         <div class="slideshow-item">
                             <img src="img/slideshow-dest.png" alt="">
                         </div>
-                        <div class="slideshow-item">
+                        <div class="slideshow-item ">
                             <img src="img/slideshow-dest.png" alt="">
                         </div>
                         <div class="slideshow-item">
@@ -121,14 +119,63 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-2-desktop is-12-mobile">
-                    <div class="share is-right"></div>
+                <div class="column is-2 is-12-mobile">
+                    <div class="share"></div>
                 </div>
             </div>
         </div>
-
+        <!-- END SLIDESHOW -->
     </section>
-    <!-- END SLIDESHOW -->
+
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+                <ul>
+                    <li>
+                        <a href="#">Destination</a>
+                    </li>
+
+                    <li class="is-active">
+                        <a href="#" aria-current="page">Boracay Island</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- END BREADCRUMB -->
+    <section class="destination-info">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-8">
+                    <div class="destination-info-map">
+                        <div class="map-info">
+                            <div class="map-info-content">
+                                <h1 class="is-green is-upper is-center">BORACAY ISLAND</h1>
+                                <div class="map-info-text">
+                                    <p>If you are one of the party lovers, your attention can not escape the island of Boracay.
+                                        Boracay is one of the smaller islands of the Philippines, but one of the most well-known
+                                        and most visited.</p>
+                                </div>
+                                <div class="map-info-morephoto">
+                                    <a href="">More photo
+                                        <span class="icon is-small is-right">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="destination-info-image">
+                        <img src="img/detaildestination-map.png" alt="">
+                        <img src="img/slideshow-dest.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="social-description">
         <div class="container">
             <div class="content">
