@@ -4,8 +4,30 @@
   to {
     transform: rotate(359deg); } }
 
+.destination-transfer {
+  padding-right: 2rem;
+  border-right: 1px solid #219f93; }
+  @media screen and (max-width: 800px) {
+    .destination-transfer {
+      padding: 0px;
+      border-right: none; } }
+  .destination-transfer-airport ul li {
+    font-size: 14px;
+    color: #dfab0a; }
+
+.destination-closest {
+  padding-left: 2rem; }
+  @media screen and (max-width: 800px) {
+    .destination-closest {
+      padding: 0px; } }
+  .destination-closest ul li {
+    display: flex; }
+    .destination-closest ul li p {
+      font-weight: 400;
+      margin-right: 3rem; }
+
 .destination-info-map {
-  height: 631px;
+  height: 531px;
   display: flex;
   flex-direction: column;
   justify-content: center;

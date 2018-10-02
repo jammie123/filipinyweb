@@ -4,6 +4,6 @@
   .slideshow-content {
     display: flex; }
   .slideshow-item {
-    width: 170px;
-    height: 113px;
-    margin-right: 11px; }
+    max-height: 200px; }
+    .slideshow-item img {
+      max-width: 100%; }
