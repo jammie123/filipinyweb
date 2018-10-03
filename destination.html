@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/mtz5eqn.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".header-nav ul").toggleClass("is-active");
+                $(".header").toggleClass("active");
+                $(".header:not(.active)").toggleClass("active");
+            });
+        });
+        $(window).on("scroll", function () {
+            if ($(".navbar-burger:not(.active)")) {
+                if ($(window).scrollTop() > 50) {
+                    $(".header").addClass("active");
+                } else {
+                    //remove the background property so it comes transparent again (defined in your css)
+                    $(".header").removeClass("active");
+                }
+            }
+
+        });
+    </script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <div class="header">
+            <div class="header-brand">
+                <div class="header-brand-logo">
+                    Amazing Philippines
+                </div>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>
+                        <a href="homepage.html">Homepage</a>
+                    </li>
+                    <li>
+                        <a href="destinations.html">Destinations</a>
+                    </li>
+                    <li>
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                        <a href="beaches.html">Popular beaches</a>
+                    </li>
+                    <li>
+                        <a href="hotels.html">Top hotels</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <section class="welcome" style="background-image: url('img/listdestination.png');">
+
+        <div class="container">
+            <div class="welcome-title">
+                <h1 class="is-white is-center fw700">Discover the most beautiful places
+
+                </h1>
+                <h2 class="is-white is-center"> in the Philippines! </h2>
+            </div>
+        </div>
+    </section>
+    <!-- END WELCOME -->
+    <section class="search-hotel">
+        <div class="search-hotel-input">
+            <div class="field has-addons">
+                <div class="control has-icons-left is-expanded">
+                    <input class="input is-large" type="text" placeholder="find your destination or hotel">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <div class="control">
+                    <a class="button is-large is-info">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SEARCH HOTEL -->
+    <section class="beach">
+        <div class="container">
+            <h2 class="is-green">DESTINATIONS</h2>
+            <div class="beach-content">
+                <div class="columns is-multiline is-mobile">
+                    <p class="column is-10 is-offset-1">Discover the most beautiful place on earth. Let's get away with the beauty of the Philippines. The re-opened
+                        island of <strong>Boracay</strong>, the beautiful island of <strong>Palawan</strong>, the island full of adventure Cebu or another
+                        of the thousands of islands of Amazing Philippines.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END DESTINATION -->
+    <section class="destination is-marginless">
+        <div class="container is-fluid is-marginless">
+            <h2 class="is-upper is-green is-center row bg-green is-white">Top Destination</h2>
+            <div class="destination-content destination-content--listdest container">
+                <div class="columns is-multiline is-mobile">
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item destination-content-item--topitem ">
+                            <div class="destination-content-item-title destination-content-item-title--listdest">
+                                <p class="is-white">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="detaildestination.html" class="button is-primary">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item destination-content-item--topitem">
+                            <div class="destination-content-item-title destination-content-item-title--listdest">
+                                <p class="is-white">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="detaildestination.html" class="button is-primary">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item destination-content-item--topitem">
+                            <div class="destination-content-item-title destination-content-item-title--listdest">
+                                <p class="is-white">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="detaildestination.html" class="button is-primary">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item destination-content-item--topitem">
+                            <div class="destination-content-item-title destination-content-item-title--listdest">
+                                <p class="is-white">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TOP DESTINATION -->
+    <section class="inspiration">
+        <div class="container">
+            <h2 class="is-green">OTHER DESTINATIONS</h2>
+            <div class="inspiration-content">
+                <div class="columns is-multiline is-mobile">
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-half-mobile is-3-desktop ">
+                        <div class="destination-content-item ">
+                            <div class="destination-content-item-title">
+                                <p class="is-green">Coron</p>
+                            </div>
+                            <div class="destination-content-item-image">
+                                <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"
+                                    alt="">
+                            </div>
+                            <div class="destination-content-item-image--hover">
+                                <img src="img/destination-hover.png" alt="">
+                                <a href="" class="button is-primary ">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END OTHER DESTINATION -->
+
+    <section class="newsleter">
+        <h2 class="is-center is-white">Would you like information about new amazing places?</h2>
+        <div class="newsleter-content">
+            <div class="field has-addons">
+                <div class="control has-icons-left is-expanded">
+                    <input class="input is-medium" type="text" placeholder="find your destination or hotel">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <div class="control">
+                    <a class="button is-medium is-info is-upper">
+                        submit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END NEWSLETTER -->
+    <footer class="footer">
+        <section class="social-icon">
+            <div class="fb"></div>
+            <div class="insta"></div>
+        </section>
+        <div class="footer-content">
+            <div class="footer-content-item">
+                <a href="" class="is-white">email@amazingphilippines.uk</a>
+            </div>
+            <div class="footer-content-item">
+                <a href="" class="is-white">Business conditions</a>
+            </div>
+            <div class="footer-content-item footer-content-item--copy">
+                <a href="">Copyright © 2018 Amazing Philippines | Designed by Jana Jonášová</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

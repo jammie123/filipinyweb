@@ -1,12 +1,15 @@
 @import "../components/bulma/sass/utilities/_all";
+.row {
+  padding: 2rem 0rem 6rem 0rem;
+}
 .destination {
   &-transfer {
-      @include mobile{
-          padding: 0px;
-          border-right: none;
-      }
-      padding-right: 2rem;
-      border-right: 1px solid #219f93;
+    @include mobile {
+      padding: 0px;
+      border-right: none;
+    }
+    padding-right: 2rem;
+    border-right: 1px solid #219f93;
     &-airport {
       ul li {
         font-size: 14px;
@@ -14,22 +17,21 @@
       }
     }
   }
-  &-closest{
-    @include mobile{
-        padding: 0px;
-
+  &-closest {
+    @include mobile {
+      padding: 0px;
     }
-      padding-left: 2rem;
-      ul{
-          li{
-              display: flex;
-              
-              p{
-                font-weight: 400;
-                  margin-right: 3rem;
-              }
-          }
+    padding-left: 2rem;
+    ul {
+      li {
+        display: flex;
+
+        p {
+          font-weight: 400;
+          margin-right: 3rem;
+        }
       }
+    }
   }
 }
 .destination-info {
@@ -67,6 +69,7 @@
 .map {
   &-info {
     &-content {
+
     }
     &-text {
       margin-top: 1.5rem;
