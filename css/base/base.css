@@ -55,6 +55,9 @@ p {
 .fw700 {
   font-weight: 700; }
 
+.fw300 {
+  font-weight: 300 !important; }
+
 a {
   text-decoration: none; }
 
