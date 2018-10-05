@@ -3364,6 +3364,8 @@ a {
     display: flex;
     flex-direction: column;
     max-width: 500px; }
+    .trends-card--activities {
+      max-width: inherit; }
     @media screen and (max-width: 800px) {
       .trends-card {
         margin: 0px;

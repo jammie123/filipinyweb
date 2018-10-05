@@ -21,6 +21,9 @@
     }
   }
   &-card {
+    &--activities{
+      max-width: inherit;
+    }
     position: relative;
     margin-top: 79px;
     margin-bottom: 79px;
