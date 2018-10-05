@@ -52,7 +52,8 @@
     .destination-content-item-image--big img {
       height: 350px !important; }
     .destination-content-item-image img {
-      height: 160px; }
+      height: 160px;
+      object-fit: cover; }
     .destination-content-item-image--hover {
       width: 100%;
       position: absolute;

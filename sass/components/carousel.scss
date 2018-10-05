@@ -1,0 +1,64 @@
+/* Defines the width of the carousel and centers it on the page */
+.slick-slider {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.object-fit_cover {
+  object-fit: cover;
+}
+
+/* The width of each slide */
+.slick-slider img {
+  max-width: 100%;
+  object-fit: cover;
+  max-height: 765px !important;
+  min-height: 365px !important;
+}
+
+/* Color of the arrows */
+.slick-next::before,
+.slick-prev::before {
+  color: blue;
+  font-size: 40px !important;
+  top: 50%;
+}
+
+.slick-next {
+  right: 50px !important;
+  z-index: 10;
+  top: 50%;
+}
+
+.slick-prev {
+  left: 20px !important;
+  z-index: 10;
+  top: 50%;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 2rem !important;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+  opacity: 0.75 !important;
+
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: white !important;
+}
+
+.slick-dots li button:before {
+  opacity: 1;
+  color: transparent;
+  
+}

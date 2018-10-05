@@ -1,3 +1,4 @@
+@import "bulma/sass/utilities/_all";
 .welcome {
     position: relative;
   &--home {
@@ -5,6 +6,30 @@
   }
   &--destination {
     background-image: url("../../img/detaildest.png");
+  }
+  &--activities
+  {
+    position: relative;
+    &-title{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      color: white;
+      z-index: 9;
+      a{
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        @include mobile{
+          right: inherit;
+          bottom: 5rem;
+        }
+      }
+    }
   }
   height: 500px;
   background-size: cover;

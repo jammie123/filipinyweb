@@ -6,7 +6,8 @@
     .beach-content-item {
       position: relative; }
       .beach-content-item-image img {
-        width: 100%; }
+        width: 100%;
+        object-fit: cover; }
       .beach-content-item-title {
         position: absolute;
         bottom: 16px;
