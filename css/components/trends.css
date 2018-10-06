@@ -12,6 +12,8 @@
     display: flex;
     position: relative;
     justify-content: center; }
+    .trends-item--activities {
+      padding: 2rem; }
     @media screen and (max-width: 800px) {
       .trends-item {
         margin-top: 2rem; } }

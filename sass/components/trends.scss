@@ -5,6 +5,9 @@
   }
   color: white;
   &-item {
+    &--activities{
+      padding: 2rem;
+    }
     display: flex;
     position: relative;
     justify-content: center;
