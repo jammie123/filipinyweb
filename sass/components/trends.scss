@@ -5,8 +5,16 @@
   }
   color: white;
   &-item {
-    &--activities{
+    &--activities {
       padding: 2rem;
+    }
+    &--hotel{
+      padding: 2rem;
+      margin: 1rem 1rem 1rem 0rem;
+      height: calc(100% - 2rem);
+      @include mobile{
+        margin: 0px;
+      }
     }
     display: flex;
     position: relative;
@@ -24,12 +32,13 @@
     }
   }
   &-card {
-    &--activities{
+    &--activities {
       max-width: inherit;
     }
     position: relative;
     margin-top: 79px;
     margin-bottom: 79px;
+    justify-content: center;
     @include mobile {
       margin: 0px;
       margin: 3rem 0rem;

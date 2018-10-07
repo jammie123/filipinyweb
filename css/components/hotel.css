@@ -12,9 +12,11 @@
     margin-bottom: 80px; }
   .hotel-content {
     position: relative; }
-    .hotel-content-img img {
-      height: 262px;
-      object-fit: cover; }
+    .hotel-content-img {
+      height: 263px; }
+      .hotel-content-img img {
+        height: 262px;
+        object-fit: cover; }
     .hotel-content-item {
       width: 100%;
       position: absolute;

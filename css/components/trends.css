@@ -14,6 +14,13 @@
     justify-content: center; }
     .trends-item--activities {
       padding: 2rem; }
+    .trends-item--hotel {
+      padding: 2rem;
+      margin: 1rem 1rem 1rem 0rem;
+      height: calc(100% - 2rem); }
+      @media screen and (max-width: 800px) {
+        .trends-item--hotel {
+          margin: 0px; } }
     @media screen and (max-width: 800px) {
       .trends-item {
         margin-top: 2rem; } }
@@ -28,6 +35,7 @@
     position: relative;
     margin-top: 79px;
     margin-bottom: 79px;
+    justify-content: center;
     margin-right: 32px;
     margin-left: 32px;
     display: flex;

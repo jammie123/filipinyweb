@@ -1,9 +1,11 @@
 .filter {
- 
   &-destination {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @include mobile{
+      flex-direction: column;
+    }
   }
 }
 
@@ -26,16 +28,18 @@ select {
 }
 /* Custom Select */
 .select {
-    margin: 0rem 1rem;
+  margin: 0rem 0.25rem;
   position: relative;
   display: block;
-  width: 20em;
+  width: 13em;
   height: 2em;
-
   background: white;
   border: 1px solid #9a9a9a;
   overflow: hidden;
   border-radius: 0em;
+  @include mobile{
+    margin: 0.5rem;
+  }
 }
 
 /* Arrow */
