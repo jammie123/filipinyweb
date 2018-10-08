@@ -1,0 +1,23 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.imagecarousel {
+  display: flex; }
+  .imagecarousel-item {
+    width: 124px;
+    height: 82px;
+    position: relative;
+    margin-right: 0.5rem; }
+  .imagecarousel-overlay {
+    position: absolute;
+    top: 0px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); }

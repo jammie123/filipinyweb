@@ -1,0 +1,23 @@
+@import "bulma/sass/utilities/_all";
+.imagecarousel {
+  display: flex;
+  img {
+  }
+  &-item {
+    width: 124px;
+    height: 82px;
+    position: relative;
+    margin-right: 0.5rem;
+  }
+  &-overlay {
+    position: absolute;
+    top: 0px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}

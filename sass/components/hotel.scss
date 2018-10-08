@@ -35,12 +35,6 @@
         top: 80px;
         width: 100%;
         position: absolute;
-        .rating-star {
-          background: url("../../img/star_gold.svg");
-          margin: 4px;
-          width: 20px;
-          height: 19px;
-        }
       }
       &-title {
         position: relative;
@@ -76,4 +70,137 @@
       }
     }
   }
+}
+.detailhotel {
+  &-content {
+  }
+  &-mapa {
+    width: 430px;
+  }
+  &-description {
+  }
+  &-ordercontent {
+    display: flex;
+    width: 100%;
+  }
+  &-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-title {
+      color: white;
+      font-size: 24px;
+    }
+    &-content {
+      border-top: 1px solid #219f93;
+      padding-top: 1.5rem;
+      position: relative;
+    }
+    &-comment {
+      padding: 0rem 2.5rem;
+    }
+    &-slider {
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      background-color: #303030;
+    }
+    &-stars {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    &-index {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 67px;
+      height: 63px;
+      border-radius: 10px;
+      background-color: #219f93;
+    }
+  }
+  &-booking {
+    height: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #219f93;
+    background-image: linear-gradient(to top, #0d7d72 0%, #219f93 100%);
+  }
+  &-equip {
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+
+      margin: 0.5rem 3rem 0.5rem 0rem;
+      p {
+        margin-left: 0.5rem;
+      }
+      &--air {
+        background: url("../../img/air condition.svg");
+        background-size: contain;
+        width: 29px;
+        height: 29px;
+      }
+      &--cafe {
+        background: url("../../img/breakfast.svg");
+        background-size: contain;
+        width: 29px;
+        height: 29px;
+      }
+      &--wifi {
+        background: url("../../img/wifi.svg");
+        background-size: contain;
+        background-size: contain;
+        width: 30px;
+        height: 22px;
+      }
+      &--parking {
+        background: url("../../img/parking.svg");
+        background-size: contain;
+        width: 29px;
+        height: 29px;
+      }
+    }
+  }
+}
+
+.rating-star {
+  background: url("../../img/star_gold.svg");
+  margin: 4px;
+  width: 20px;
+  height: 19px;
+}
+
+.arrowright,
+.arrowleft {
+  width: 29px;
+  height: 45px;
+  background-color: #3e3e3e;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowleft {
+  top: 40%;
+  left: -2.5rem;
+}
+.arrowright {
+  top: 40%;
+  right: -2.5rem;
 }

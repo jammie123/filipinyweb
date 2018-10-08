@@ -3775,6 +3775,9 @@ p {
 .bg-green2 {
   background: #007064; }
 
+.is-dark {
+  color: #303030 !important; }
+
 .fw700 {
   font-weight: 700; }
 
@@ -3797,6 +3800,9 @@ a {
 
 .hr_2 {
   height: 2rem; }
+
+.hr_1 {
+  height: 1rem; }
 
 .hr_4 {
   height: 4rem; }
@@ -4003,11 +4009,6 @@ a {
         top: 80px;
         width: 100%;
         position: absolute; }
-        .hotel-content-item-rating .rating-star {
-          background: url("../../img/star_gold.svg");
-          margin: 4px;
-          width: 20px;
-          height: 19px; }
       .hotel-content-item-title {
         position: relative;
         top: 116px;
@@ -4031,6 +4032,116 @@ a {
         visibility: hidden; }
       .hotel-content-item:last-child {
         border-right: 1px solid transparent; }
+
+.detailhotel-mapa {
+  width: 430px; }
+
+.detailhotel-ordercontent {
+  display: flex;
+  width: 100%; }
+
+.detailhotel-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .detailhotel-review-title {
+    color: white;
+    font-size: 24px; }
+  .detailhotel-review-content {
+    border-top: 1px solid #219f93;
+    padding-top: 1.5rem;
+    position: relative; }
+  .detailhotel-review-comment {
+    padding: 0rem 2.5rem; }
+  .detailhotel-review-slider {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-color: #303030; }
+  .detailhotel-review-stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem; }
+  .detailhotel-review-index {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+    height: 63px;
+    border-radius: 10px;
+    background-color: #219f93; }
+
+.detailhotel-booking {
+  height: 190px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #219f93;
+  background-image: linear-gradient(to top, #0d7d72 0%, #219f93 100%); }
+
+.detailhotel-equip-content {
+  display: flex;
+  flex-wrap: wrap; }
+
+.detailhotel-equip-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 3rem 0.5rem 0rem; }
+  .detailhotel-equip-item p {
+    margin-left: 0.5rem; }
+  .detailhotel-equip-item--air {
+    background: url("../../img/air condition.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--cafe {
+    background: url("../../img/breakfast.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--wifi {
+    background: url("../../img/wifi.svg");
+    background-size: contain;
+    background-size: contain;
+    width: 30px;
+    height: 22px; }
+  .detailhotel-equip-item--parking {
+    background: url("../../img/parking.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+
+.rating-star {
+  background: url("../../img/star_gold.svg");
+  margin: 4px;
+  width: 20px;
+  height: 19px; }
+
+.arrowright,
+.arrowleft {
+  width: 29px;
+  height: 45px;
+  background-color: #3e3e3e;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.arrowleft {
+  top: 40%;
+  left: -2.5rem; }
+
+.arrowright {
+  top: 40%;
+  right: -2.5rem; }
 
 .inspiration {
   margin-bottom: 116px;
@@ -4487,6 +4598,76 @@ a {
   opacity: 1;
   color: transparent; }
 
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.is-unselectable, .file, .button, .breadcrumb {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.breadcrumb:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.control.is-loading::after, .button.is-loading::after {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em; }
+
+.is-overlay, .image.is-square img, .image.is-1by1 img, .image.is-5by4 img, .image.is-4by3 img, .image.is-3by2 img, .image.is-5by3 img, .image.is-16by9 img, .image.is-2by1 img, .image.is-3by1 img, .image.is-4by5 img, .image.is-3by4 img, .image.is-2by3 img, .image.is-3by5 img, .image.is-9by16 img, .image.is-1by2 img, .image.is-1by3 img {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.input,
+.textarea, .file-cta,
+.file-name, .button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: calc(0.625em - 1px);
+  padding-right: calc(0.625em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: top; }
+  .input:focus,
+  .textarea:focus, .file-cta:focus,
+  .file-name:focus, .button:focus, .is-focused.input,
+  .is-focused.textarea, .is-focused.file-cta,
+  .is-focused.file-name, .is-focused.button, .input:active,
+  .textarea:active, .file-cta:active,
+  .file-name:active, .button:active, .is-active.input,
+  .is-active.textarea, .is-active.file-cta,
+  .is-active.file-name, .is-active.button {
+    outline: none; }
+  .input[disabled],
+  .textarea[disabled], .file-cta[disabled],
+  .file-name[disabled], .button[disabled] {
+    cursor: not-allowed; }
+
 .filter-destination {
   display: flex;
   justify-content: flex-end;
@@ -4543,6 +4724,94 @@ select {
   text-align: center;
   background: #fdc61d;
   pointer-events: none; }
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.is-unselectable, .file, .button, .breadcrumb {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.breadcrumb:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.control.is-loading::after, .button.is-loading::after {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em; }
+
+.is-overlay, .image.is-square img, .image.is-1by1 img, .image.is-5by4 img, .image.is-4by3 img, .image.is-3by2 img, .image.is-5by3 img, .image.is-16by9 img, .image.is-2by1 img, .image.is-3by1 img, .image.is-4by5 img, .image.is-3by4 img, .image.is-2by3 img, .image.is-3by5 img, .image.is-9by16 img, .image.is-1by2 img, .image.is-1by3 img {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.input,
+.textarea, .file-cta,
+.file-name, .button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: calc(0.625em - 1px);
+  padding-right: calc(0.625em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: top; }
+  .input:focus,
+  .textarea:focus, .file-cta:focus,
+  .file-name:focus, .button:focus, .is-focused.input,
+  .is-focused.textarea, .is-focused.file-cta,
+  .is-focused.file-name, .is-focused.button, .input:active,
+  .textarea:active, .file-cta:active,
+  .file-name:active, .button:active, .is-active.input,
+  .is-active.textarea, .is-active.file-cta,
+  .is-active.file-name, .is-active.button {
+    outline: none; }
+  .input[disabled],
+  .textarea[disabled], .file-cta[disabled],
+  .file-name[disabled], .button[disabled] {
+    cursor: not-allowed; }
+
+.imagecarousel {
+  display: flex; }
+  .imagecarousel-item {
+    width: 124px;
+    height: 82px;
+    position: relative;
+    margin-right: 0.5rem; }
+  .imagecarousel-overlay {
+    position: absolute;
+    top: 0px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); }
 
 @keyframes spinAround {
   from {

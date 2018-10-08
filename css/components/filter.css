@@ -1,7 +1,16 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
 .filter-destination {
   display: flex;
   justify-content: flex-end;
   align-items: center; }
+  @media screen and (max-width: 800px) {
+    .filter-destination {
+      flex-direction: column; } }
 
 select {
   -webkit-appearance: none;
@@ -31,6 +40,9 @@ select {
   border: 1px solid #9a9a9a;
   overflow: hidden;
   border-radius: 0em; }
+  @media screen and (max-width: 800px) {
+    .select {
+      margin: 0.5rem; } }
 
 /* Arrow */
 .select::after {

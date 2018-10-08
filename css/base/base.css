@@ -52,6 +52,9 @@ p {
 .bg-green2 {
   background: #007064; }
 
+.is-dark {
+  color: #303030 !important; }
+
 .fw700 {
   font-weight: 700; }
 
@@ -74,6 +77,9 @@ a {
 
 .hr_2 {
   height: 2rem; }
+
+.hr_1 {
+  height: 1rem; }
 
 .hr_4 {
   height: 4rem; }
