@@ -1,3 +1,9 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
 .hotel {
   text-align: center;
   display: flex;
@@ -53,12 +59,27 @@
       .hotel-content-item:last-child {
         border-right: 1px solid transparent; }
 
+.detailhotel-landmark {
+  margin-top: 2rem;
+  color: #2f2f2f; }
+  .detailhotel-landmark p {
+    font-size: 18px; }
+  .detailhotel-landmark-title {
+    margin-bottom: 1.5rem; }
+  .detailhotel-landmark-name {
+    margin-right: 6rem; }
+  .detailhotel-landmark ul li {
+    display: flex; }
+
 .detailhotel-mapa {
-  width: 430px; }
+  max-width: 430px; }
 
 .detailhotel-ordercontent {
   display: flex;
   width: 100%; }
+  @media screen and (max-width: 800px) {
+    .detailhotel-ordercontent {
+      flex-direction: column-reverse; } }
 
 .detailhotel-review {
   display: flex;

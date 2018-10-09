@@ -1,3 +1,4 @@
+@import "bulma/sass/utilities/_all";
 .hotel {
   &--home {
     height: 700px;
@@ -74,13 +75,35 @@
 .detailhotel {
   &-content {
   }
+  &-landmark {
+    margin-top: 2rem;
+    color: #2f2f2f;
+   p{
+    font-size: 18px;
+   }
+    &-title {
+      margin-bottom: 1.5rem;
+    }
+    &-name {
+      margin-right: 6rem;
+    }
+    ul {
+      li {
+        display: flex;
+        
+      }
+    }
+  }
   &-mapa {
-    width: 430px;
+    max-width: 430px;
   }
   &-description {
   }
   &-ordercontent {
     display: flex;
+    @include mobile{
+      flex-direction: column-reverse;
+    }
     width: 100%;
   }
   &-review {

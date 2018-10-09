@@ -5,12 +5,14 @@
     transform: rotate(359deg); } }
 
 .imagecarousel {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   .imagecarousel-item {
     width: 124px;
     height: 82px;
     position: relative;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem; }
   .imagecarousel-overlay {
     position: absolute;
     top: 0px;

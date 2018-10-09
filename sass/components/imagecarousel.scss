@@ -1,6 +1,7 @@
 @import "bulma/sass/utilities/_all";
 .imagecarousel {
   display: flex;
+  flex-wrap: wrap;
   img {
   }
   &-item {
@@ -8,6 +9,7 @@
     height: 82px;
     position: relative;
     margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   &-overlay {
     position: absolute;
