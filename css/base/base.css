@@ -76,10 +76,17 @@ a {
   margin-right: auto; }
 
 .hr_2 {
-  height: 2rem; }
+  height: 2rem;
+  width: 100%; }
 
 .hr_1 {
-  height: 1rem; }
+  height: 1rem;
+  width: 100%; }
 
 .hr_4 {
-  height: 4rem; }
+  height: 4rem;
+  width: 100%; }
+
+.br-white {
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent; }

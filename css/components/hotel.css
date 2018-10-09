@@ -19,15 +19,23 @@
   .hotel-content {
     position: relative; }
     .hotel-content-img {
-      height: 263px; }
+      height: 263px;
+      overflow: hidden; }
       .hotel-content-img img {
         height: 262px;
+        overflow: hidden;
         object-fit: cover; }
     .hotel-content-item {
       width: 100%;
-      position: absolute;
-      border-right: 1px solid white;
+      position: relative;
+      background-size: cover !important;
       height: 262px;
+      z-index: 100;
+      overflow: hidden;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
       text-align: center; }
       .hotel-content-item-rating {
         display: flex;
@@ -48,16 +56,30 @@
         text-align: center;
         visibility: hidden;
         position: relative;
-        width: 140px;
         top: 54px; }
+      .hotel-content-item:hover {
+        -ms-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1); }
+        .hotel-content-item:hover:before {
+          display: block; }
+      .hotel-content-item:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.25); }
       .hotel-content-item:hover .button {
         visibility: visible; }
       .hotel-content-item:hover .hotel-content-item-title {
         visibility: hidden; }
       .hotel-content-item:hover .rating-star {
         visibility: hidden; }
-      .hotel-content-item:last-child {
-        border-right: 1px solid transparent; }
 
 .detailhotel-landmark {
   margin-top: 2rem;
