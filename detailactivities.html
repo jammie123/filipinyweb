@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/mtz5eqn.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <script>
+
+        $(document).ready(function () {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".header-nav ul").toggleClass("is-active");
+                $(".header").toggleClass("active");
+                $(".header:not(.active)").toggleClass("active");
+            });
+        });
+        $(window).on("scroll", function () {
+            if ($(".navbar-burger:not(.active)")) {
+                if ($(window).scrollTop() > 50) {
+                    $(".header").addClass("active");
+                } else {
+                    //remove the background property so it comes transparent again (defined in your css)
+                    $(".header").removeClass("active");
+                }
+            }
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <div class="header">
+            <div class="header-brand">
+                <div class="header-brand-logo">
+                    Amazing Philippines
+                </div>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>
+                        <a href="homepage.html">Homepage</a>
+                    </li>
+                    <li>
+                        <a href="destinations.html">Destinations</a>
+                    </li>
+                    <li>
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                        <a href="beaches.html">Popular beaches</a>
+                    </li>
+                    <li>
+                        <a href="hotels.html">Top hotels</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <section class="welcome" style="background-image: url( 'img/detailactivities.png'); ">
+        <div class="container">
+            <div class="welcome-title">
+                <h1 class="is-white is-center fw700">Rice Terrace | Palawan</h1>
+            </div>
+        </div>
+    </section>
+    <!-- END WELCOME -->
+    <div class="hr_2"></div>
+
+    <section class="detailhotel-content">
+        <div class="container">
+            <div class="columns is-multiline is-mobile">
+                <div class="column is-12-desktop is-12-tablet is-12-mobile">
+                    <section class="imagecarousel">
+                        <div class="imagecarousel-item">
+                            <img src="img/detailhotelimg.png" alt="">
+                        </div>
+                        <div class="imagecarousel-item">
+                            <img src="img/detailhotelimg.png" alt="">
+                        </div>
+                        <div class="imagecarousel-item">
+                            <img src="img/detailhotelimg.png" alt="">
+                        </div>
+                        <div class="imagecarousel-item">
+                            <img src="img/detailhotelimg.png" alt="">
+                        </div>
+                        <div class="imagecarousel-item imagecarousel-item--last">
+                            <img src="img/detailhotelimg.png" alt="">
+                            <div class="imagecarousel-overlay">8+</div>
+                        </div>
+                    </section>
+                    <!-- END IMAGECAROUSEL -->
+                </div>
+                <div class="column is-8-desktop is-7-tablet is-12-mobile">
+                    <section class="detailhotel-description">
+                        <h3 class="is-green is-upper fw700">Description</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique iste aspernatur esse consequuntur
+                            voluptatum delectus officiis? Error, quasi necessitatibus magni distinctio, perferendis quaerat
+                            iure aspernatur optio voluptatem expedita, nostrum ullam!</p>
+                    </section>
+                    <!-- END DESC -->
+                    <section class="detailhotel-mapa">
+                        <h3 class="is-green fw700 is-upper">Map</h3>
+                        <img src="img/mapa.png" alt="">
+                    </section>
+                    <!-- END EQUIP -->
+                </div>
+                <div class="column is-4-desktop  is-5-tablet is-12-mobile">
+                    <h3 class="is-green is-upper fw700">Video</h3>
+                    <img src="img/video.png" alt="">
+                    <!-- END VIDEO -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTENT -->
+    <section class="otherplaces">
+        <div class="container">
+            <h3 class="is-green fw700 is-upper">Other activities at this location</h3>
+            <div class="beach-content">
+                <div class="columns is-multiline is-mobile">
+                    <div class="beach-content-item column is-half-mobile is-3-desktop">
+                        <div class="beach-content-item-title">
+                            <a href="detailactivities.html">
+                                <p class="is-white">White beach</p>
+                                <p class="is-white">Boracay island</p>
+                            </a>
+                        </div>
+                        <div class="beach-content-item-image">
+                            <img src="img/inspiration.png" alt="">
+                        </div>
+                    </div>
+                    <div class="beach-content-item column is-half-mobile is-3-desktop">
+                        <div class="beach-content-item-title">
+                            <a href="detailactivities.html">
+                                <p class="is-white">White beach</p>
+                                <p class="is-white">Boracay island</p>
+                            </a>
+                        </div>
+                        <div class="beach-content-item-image">
+                            <img src="img/inspiration.png" alt="">
+                        </div>
+                    </div>
+                    <div class="beach-content-item column is-half-mobile is-3-desktop">
+                        <div class="beach-content-item-title">
+                            <a href="detailactivities.html">
+                                <p class="is-white">White beach</p>
+                                <p class="is-white">Boracay island</p>
+                            </a>
+                        </div>
+                        <div class="beach-content-item-image">
+                            <img src="img/inspiration.png" alt="">
+                        </div>
+                    </div>
+                    <div class="beach-content-item column is-half-mobile is-3-desktop">
+                        <div class="beach-content-item-title">
+                            <a href="detailactivities.html">
+                                <p class="is-white">White beach</p>
+                                <p class="is-white">Boracay island</p>
+                            </a>
+                        </div>
+                        <div class="beach-content-item-image">
+                            <img src="img/inspiration.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="button is-info is-centered">
+                    <span>Show more</span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- END OTHER OFFERS -->
+    <section class="otheroffers">
+        <div class="container">
+            <h3 class="is-green fw700 is-upper">Other offers nearby</h3>
+            <div class="columns is-multiline is-mobile is-gapless is-marginless">
+
+                <div class="column is-3-desktop is-3-tablet is-6-mobile">
+                    <div class="hotel-content-item">
+                        <div class="hotel-content-item-rating">
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                        </div>
+                        <div class="hotel-content-item-title">
+                            <h3>HOTEL FLEUR</h3>
+                            <p>Palawan</p>
+                        </div>
+                        <a href="detailtophotel.html" class="button is-info">Show Prices</a>
+                    </div>
+                    <div class="hotel-content-img">
+                        <img src="https://images.unsplash.com/photo-1506749531272-2f6810e097c9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8af07f94eea6e35f175c1522bbbdbbf4&w=1000&q=80"
+                            alt="">
+                    </div>
+                </div>
+                <div class="column is-3-desktop is-3-tablet is-6-mobile">
+                    <div class="hotel-content-item">
+                        <div class="hotel-content-item-rating">
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                        </div>
+                        <div class="hotel-content-item-title">
+                            <h3>HOTEL FLEUR</h3>
+                            <p>Palawan</p>
+                        </div>
+                        <a href="detailtophotel.html" class="button is-info">Show Prices</a>
+                    </div>
+                    <div class="hotel-content-img">
+                        <img src="https://images.unsplash.com/photo-1506749531272-2f6810e097c9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8af07f94eea6e35f175c1522bbbdbbf4&w=1000&q=80"
+                            alt="">
+                    </div>
+                </div>
+                <div class="column is-3-desktop is-3-tablet is-6-mobile">
+                    <div class="hotel-content-item ">
+                        <div class="hotel-content-item-rating">
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                        </div>
+                        <div class="hotel-content-item-title">
+                            <h3>HOTEL FLEUR</h3>
+                            <p>Palawan</p>
+                        </div>
+                        <a href="detailtophotel.html" class="button is-info">Show Prices</a>
+                    </div>
+                    <div class="hotel-content-img">
+                        <img src="https://images.unsplash.com/photo-1506749531272-2f6810e097c9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8af07f94eea6e35f175c1522bbbdbbf4&w=1000&q=80"
+                            alt="">
+                    </div>
+                </div>
+                <div class="column is-3-desktop is-3-tablet is-6-mobile">
+                    <div class="hotel-content-item">
+
+                        <div class="hotel-content-item-rating">
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                            <div class="rating-star"></div>
+                        </div>
+                        <div class="hotel-content-item-title">
+                            <h3>HOTEL FLEUR</h3>
+                            <p>Palawan</p>
+                        </div>
+                        <a href="detailtophotel.html" class="button is-info">Show Prices</a>
+                    </div>
+                    <div class="hotel-content-img">
+                        <img src="https://images.unsplash.com/photo-1506749531272-2f6810e097c9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8af07f94eea6e35f175c1522bbbdbbf4&w=1000&q=80"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OTHER OFFERS -->
+    <div class="hr_4"></div>
+    <section class="newsleter">
+        <h3 class="is-center is-white">Would you like information about new amazing places?</h3>
+        <div class="newsleter-content">
+            <div class="field has-addons">
+                <div class="control has-icons-left is-expanded">
+                    <input class="input is-medium" type="text" placeholder="find your destination or hotel">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <div class="control">
+                    <a class="button is-medium is-info is-upper">
+                        submit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END NEWSLETTER -->
+    <footer class="footer">
+        <section class="social-icon">
+            <div class="fb"></div>
+            <div class="insta"></div>
+        </section>
+        <div class="footer-content">
+            <div class="footer-content-item">
+                <a href="" class="is-white">email@amazingphilippines.uk</a>
+            </div>
+            <div class="footer-content-item">
+                <a href="" class="is-white">Business conditions</a>
+            </div>
+            <div class="footer-content-item footer-content-item--copy">
+                <a href="">Copyright © 2018 Amazing Philippines | Designed by Jana Jonášová</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('.slick-slider').slick({
+            infinite: true,
+            slidesToShow: 1, // Shows a three slides at a time
+            slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+            arrows: true, // Adds arrows to sides of slider
+            dots: true // Adds the dots on the bottom
+        });</script>
+
+</body>
+
+</html>
