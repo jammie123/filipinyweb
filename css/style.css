@@ -4300,9 +4300,12 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        .beach-content-item-title p {
-          font-size: 18px;
+        .beach-content-item-title p, .beach-content-item-title a {
+          font-size: 20px;
+          font-weight: 300;
           padding-left: 8px; }
+        .beach-content-item-title a {
+          text-decoration: underline; }
 
 @keyframes spinAround {
   from {
