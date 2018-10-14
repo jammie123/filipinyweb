@@ -22,8 +22,11 @@
       @media screen and (max-width: 800px) {
         .footer-content-item {
           padding: 0.5rem; } }
-      @media screen and (max-width: 800px) {
-        .footer-content-item--copy {
-          text-align: center; } }
-      .footer-content-item--copy a {
+      .footer-content-item--copy {
         color: #898989; }
+        @media screen and (max-width: 800px) {
+          .footer-content-item--copy {
+            text-align: center; } }
+        .footer-content-item--copy a {
+          color: #898989;
+          text-decoration: underline; }

@@ -6,13 +6,16 @@
 
 .hotel {
   text-align: center;
-  display: flex;
-  align-items: center; }
+  display: flex; }
   .hotel--home {
     height: 700px;
-    background: url("../../img/hotelbg-gradient.png");
+    background: url("../../img/dopozaditophotels.jpg");
     background-size: cover;
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center; }
+  .hotel .container {
+    width: 100%; }
   .hotel .button {
     margin-top: 17px;
     margin-bottom: 80px; }
@@ -52,6 +55,9 @@
         .hotel-content-item-title h3 {
           font-size: 24px;
           margin: 0px; }
+          @media screen and (max-width: 800px) {
+            .hotel-content-item-title h3 {
+              font-size: 18px; } }
       .hotel-content-item .button {
         text-align: center;
         visibility: hidden;

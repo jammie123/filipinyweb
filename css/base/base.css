@@ -87,6 +87,9 @@ a {
   height: 4rem;
   width: 100%; }
 
+.is-underline {
+  text-decoration: underline; }
+
 .br-white {
   border-right: 1px solid transparent;
   border-bottom: 1px solid transparent; }

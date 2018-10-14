@@ -1,5 +1,6 @@
 .destination {
-  margin-bottom: 116px; }
+  margin-bottom: 116px;
+  text-align: center; }
   .destination-content--listdest {
     position: relative;
     top: -5rem; }
@@ -11,7 +12,8 @@
       -moz-box-shadow: 0px 14px 37px -10px rgba(0, 0, 0, 0.88);
       box-shadow: 0px 14px 37px -10px rgba(0, 0, 0, 0.88); }
     .destination-content-item--big {
-      height: 350px; }
+      height: 350px;
+      position: relative; }
     .destination-content-item-title {
       height: 37px;
       width: 100%;
@@ -24,15 +26,17 @@
       left: 0px;
       padding-left: 18px; }
       .destination-content-item-title--other {
-        color: #ffffff;
-        align-items: flex-start !important; }
+        color: #ffffff; }
         .destination-content-item-title--other .name {
           font-size: 30px; }
         .destination-content-item-title--other .locality {
           font-weight: 300;
           font-size: 18px; }
         .destination-content-item-title--other a {
-          margin: 0px auto; }
+          margin: 0px auto;
+          position: absolute;
+          bottom: 1.5rem;
+          align-self: center; }
       .destination-content-item-title--other, .destination-content-item-title--listdest {
         height: 100%;
         opacity: 1;
@@ -40,7 +44,7 @@
         top: inherit;
         left: inherit;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-direction: column; }
         .destination-content-item-title--other .name, .destination-content-item-title--listdest .name {

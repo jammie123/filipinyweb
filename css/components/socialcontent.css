@@ -9,13 +9,13 @@
   justify-content: center;
   padding-top: 21px; }
   .social-icon .fb {
-    background-image: url("../../img/fb.png");
-    height: 34px;
+    background-image: url("../../img/fb_seda.svg");
+    height: 33px;
     width: 33px;
     margin: 0px 7px; }
   .social-icon .insta {
-    background-image: url("../../img/insta.png");
-    height: 34px;
+    background-image: url("../../img/insta_seda.svg");
+    height: 33px;
     width: 33px;
     margin: 0px 7px; }
 
@@ -33,3 +33,7 @@
   @media screen and (max-width: 800px) {
     .share {
       margin: 0px auto; } }
+  .share--right {
+    position: absolute;
+    right: 2rem;
+    bottom: -2rem; }

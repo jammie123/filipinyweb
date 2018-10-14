@@ -1,3 +1,9 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
 .beach {
   margin-bottom: 116px;
   text-align: center; }
@@ -5,12 +11,29 @@
     margin-bottom: 50px; }
     .beach-content-item {
       position: relative; }
-      .beach-content-item-image img {
-        width: 100%;
-        object-fit: cover; }
+      .beach-content-item-image {
+        overflow: hidden;
+        height: 100%; }
+        .beach-content-item-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .beach-content-item-image img:hover {
+            -ms-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1); }
+            .beach-content-item-image img:hover:before {
+              display: block; }
       .beach-content-item-title {
         position: absolute;
-        bottom: 16px;
+        bottom: 11px;
+        z-index: 1000;
         width: calc(100% - 1.5rem);
         height: 75px;
         background-color: rgba(0, 0, 0, 0.5);
@@ -19,9 +42,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        .beach-content-item-title p, .beach-content-item-title a {
+        .beach-content-item-title p,
+        .beach-content-item-title a {
           font-size: 20px;
           font-weight: 300;
           padding-left: 8px; }
-        .beach-content-item-title a {
-          text-decoration: underline; }
+          @media screen and (max-width: 800px) {
+            .beach-content-item-title p,
+            .beach-content-item-title a {
+              font-size: 16px; } }

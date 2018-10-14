@@ -19,11 +19,13 @@
           padding: 0.5rem;
       }
       &--copy {
+        color: #898989;
         @include mobile{
             text-align: center;
         }
         a {
           color: #898989;
+          text-decoration: underline;
         }
       }
     }
