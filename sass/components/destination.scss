@@ -1,3 +1,4 @@
+@import "bulma/sass/utilities/_all";
 .destination {
   text-align: center;
   h2 {
@@ -21,21 +22,23 @@
       }
 
       &-title {
-        &--other{
+        &--other {
           color: #ffffff;
-          .name{
+          .name {
             font-size: 30px;
           }
-          .locality{
+          .locality {
             font-weight: 300;
             font-size: 18px;
+            @include mobile {
+              font-size: 14px;
+            }
           }
-          a{
+          a {
             margin: 0px auto;
             position: absolute;
             bottom: 1.5rem;
             align-self: center;
-            
           }
         }
         &--other,
@@ -53,6 +56,9 @@
             color: #ffffff;
             font-size: 25px;
             font-weight: 700;
+            @include mobile {
+              font-size: 20px;
+            }
           }
         }
         height: 37px;
@@ -88,7 +94,8 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        display: none;
+       
+        opacity: 0;
         a {
           position: absolute;
           top: 45%;
@@ -99,7 +106,13 @@
         }
       }
       &:hover &-image--hover {
-        display: block;
+        
+        opacity: 1;
+        -webkit-transition: opacity 0.25s ease-in-out;
+        -moz-transition: opacity 0.25s ease-in-out;
+        -ms-transition: opacity 0.25s ease-in-out;
+        -o-transition: opacity 0.25s ease-in-out;
+        transition: opacity 0.25s ease-in-out;
       }
     }
   }

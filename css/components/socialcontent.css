@@ -27,9 +27,6 @@
     margin: 0px auto; }
 
 .share {
-  background: url("../../img/sharefb.png");
-  width: 68px;
-  height: 24px;
   margin-left: 3rem; }
   @media screen and (max-width: 800px) {
     .share {

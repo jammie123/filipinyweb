@@ -1,3 +1,9 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
 .destination {
   text-align: center; }
   .destination-content--listdest {
@@ -31,6 +37,9 @@
         .destination-content-item-title--other .locality {
           font-weight: 300;
           font-size: 18px; }
+          @media screen and (max-width: 800px) {
+            .destination-content-item-title--other .locality {
+              font-size: 14px; } }
         .destination-content-item-title--other a {
           margin: 0px auto;
           position: absolute;
@@ -50,6 +59,9 @@
           color: #ffffff;
           font-size: 25px;
           font-weight: 700; }
+          @media screen and (max-width: 800px) {
+            .destination-content-item-title--other .name, .destination-content-item-title--listdest .name {
+              font-size: 20px; } }
       .destination-content-item-title p {
         font-size: 18px; }
     .destination-content-item-image {
@@ -65,7 +77,7 @@
       position: absolute;
       top: 0px;
       left: 0px;
-      display: none; }
+      opacity: 0; }
       .destination-content-item-image--hover a {
         position: absolute;
         top: 45%;
@@ -73,4 +85,9 @@
       .destination-content-item-image--hover img {
         height: 100%; }
     .destination-content-item:hover .destination-content-item-image--hover {
-      display: block; }
+      opacity: 1;
+      -webkit-transition: opacity 0.25s ease-in-out;
+      -moz-transition: opacity 0.25s ease-in-out;
+      -ms-transition: opacity 0.25s ease-in-out;
+      -o-transition: opacity 0.25s ease-in-out;
+      transition: opacity 0.25s ease-in-out; }

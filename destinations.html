@@ -41,6 +41,13 @@
 
         });
     </script>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v3.1&appId=1757882871202478&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 </head>
 
 <body>
@@ -66,7 +73,7 @@
         <div class="header-nav">
             <ul>
                 <li>
-                    <a href="homepage.html">Homepage</a>
+                    <a href="index.html">Homepage</a>
                 </li>
                 <li>
                     <a href="destinations.html">Destinations</a>
@@ -98,7 +105,13 @@
                 <h2 class="is-white is-center"> in the Philippines! </h2>
             </div>
         </div>
-        <div class="share share--right"></div>
+        <div class="share share--right">
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large"
+                data-mobile-iframe="true">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Sdílet</a>
+            </div>
+        </div>
     </section>
     <!-- END WELCOME -->
     <section class="search-hotel">
@@ -343,7 +356,7 @@
                             <div class="destination-content-item-title destination-content-item-title--other">
                                 <p class="name">SECRET BEACH IN PALAWAN </p>
                                 <p class="locality">PALAWAN ISLAND</p>
-                                <a href="" class="button is-large is-info">Show more</a>
+                                <a href="" class="button is-medium is-info">Show more</a>
                             </div>
                             <div class="destination-content-item-image destination-content-item-image--big">
                                 <img src="https://images.unsplash.com/photo-1519101236449-ac8098e16f15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86414199a0fa384340a464ad1b3c277b&auto=format&fit=crop&w=1867&q=80"

@@ -3779,6 +3779,9 @@ p {
 .bg-green {
   background: #219f93; }
 
+.bg-white {
+  background: white; }
+
 .bg-green2 {
   background: #007064; }
 
@@ -3917,9 +3920,6 @@ a {
     margin: 0px auto; }
 
 .share {
-  background: url("../../img/sharefb.png");
-  width: 68px;
-  height: 24px;
   margin-left: 3rem; }
   @media screen and (max-width: 800px) {
     .share {
@@ -3929,6 +3929,76 @@ a {
     right: 2rem;
     bottom: -2rem;
     margin-left: 3rem; }
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.is-unselectable, .file, .button, .breadcrumb {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.breadcrumb:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.control.is-loading::after, .button.is-loading::after {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em; }
+
+.is-overlay, .image.is-square img, .image.is-1by1 img, .image.is-5by4 img, .image.is-4by3 img, .image.is-3by2 img, .image.is-5by3 img, .image.is-16by9 img, .image.is-2by1 img, .image.is-3by1 img, .image.is-4by5 img, .image.is-3by4 img, .image.is-2by3 img, .image.is-3by5 img, .image.is-9by16 img, .image.is-1by2 img, .image.is-1by3 img {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.input,
+.textarea, .file-cta,
+.file-name, .button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: calc(0.625em - 1px);
+  padding-right: calc(0.625em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: top; }
+  .input:focus,
+  .textarea:focus, .file-cta:focus,
+  .file-name:focus, .button:focus, .is-focused.input,
+  .is-focused.textarea, .is-focused.file-cta,
+  .is-focused.file-name, .is-focused.button, .input:active,
+  .textarea:active, .file-cta:active,
+  .file-name:active, .button:active, .is-active.input,
+  .is-active.textarea, .is-active.file-cta,
+  .is-active.file-name, .is-active.button {
+    outline: none; }
+  .input[disabled],
+  .textarea[disabled], .file-cta[disabled],
+  .file-name[disabled], .button[disabled] {
+    cursor: not-allowed; }
 
 .destination {
   text-align: center; }
@@ -3963,6 +4033,9 @@ a {
         .destination-content-item-title--other .locality {
           font-weight: 300;
           font-size: 18px; }
+          @media screen and (max-width: 800px) {
+            .destination-content-item-title--other .locality {
+              font-size: 14px; } }
         .destination-content-item-title--other a {
           margin: 0px auto;
           position: absolute;
@@ -3982,6 +4055,9 @@ a {
           color: #ffffff;
           font-size: 25px;
           font-weight: 700; }
+          @media screen and (max-width: 800px) {
+            .destination-content-item-title--other .name, .destination-content-item-title--listdest .name {
+              font-size: 20px; } }
       .destination-content-item-title p {
         font-size: 18px; }
     .destination-content-item-image {
@@ -3997,7 +4073,7 @@ a {
       position: absolute;
       top: 0px;
       left: 0px;
-      display: none; }
+      opacity: 0; }
       .destination-content-item-image--hover a {
         position: absolute;
         top: 45%;
@@ -4005,7 +4081,12 @@ a {
       .destination-content-item-image--hover img {
         height: 100%; }
     .destination-content-item:hover .destination-content-item-image--hover {
-      display: block; }
+      opacity: 1;
+      -webkit-transition: opacity 0.25s ease-in-out;
+      -moz-transition: opacity 0.25s ease-in-out;
+      -ms-transition: opacity 0.25s ease-in-out;
+      -o-transition: opacity 0.25s ease-in-out;
+      transition: opacity 0.25s ease-in-out; }
 
 @keyframes spinAround {
   from {
@@ -4080,14 +4161,28 @@ a {
 .hotel {
   text-align: center; }
   .hotel--home {
-    height: 700px;
+    min-height: 700px;
     background: url("../../img/dopozaditophotels.jpg");
     background-size: cover;
     background-position: 50% 50%;
     display: flex;
+    position: relative;
     align-items: center; }
     .hotel--home .container {
       width: 100%; }
+      .hotel--home .container .button {
+        z-index: 100; }
+  .hotel-gradient {
+    position: absolute;
+    height: 5rem;
+    bottom: 0px;
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(17%, rgba(240, 240, 240, 0.17)), color-stop(100%, #f0f0f0));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%); }
   .hotel .button-inner {
     position: absolute; }
   .hotel-content {
