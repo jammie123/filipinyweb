@@ -3794,6 +3794,9 @@ p {
 .fw300 {
   font-weight: 300 !important; }
 
+.fw400 {
+  font-weight: 400 !important; }
+
 a {
   text-decoration: none; }
 
@@ -4630,6 +4633,8 @@ a {
     max-width: 500px; }
     .trends-card--activities {
       max-width: inherit; }
+    .trends-card--blog {
+      max-width: initial; }
     @media screen and (max-width: 800px) {
       .trends-card {
         margin: 0px;
@@ -4653,6 +4658,8 @@ a {
     .trends-card-head {
       display: flex;
       flex-direction: column; }
+      .trends-card-head--blog {
+        padding: 1.5rem 1.5rem !important; }
     .trends-card-body {
       margin-top: 38px;
       display: flex; }
@@ -4660,6 +4667,9 @@ a {
         .trends-card-body {
           flex-direction: column;
           align-items: center; } }
+    .trends-card-img--blog img {
+      width: 100% !important;
+      height: 100% !important; }
     .trends-card-img img {
       width: 200px;
       height: 200px; }
@@ -4667,6 +4677,7 @@ a {
       font-size: 14px;
       font-weight: 300;
       margin-left: 26px;
+      padding-top: 1rem;
       display: flex;
       flex-direction: column; }
       @media screen and (max-width: 800px) {
@@ -5148,6 +5159,117 @@ select {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.8); }
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.is-unselectable, .file, .button, .breadcrumb {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.breadcrumb:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.control.is-loading::after, .button.is-loading::after {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em; }
+
+.is-overlay, .image.is-square img, .image.is-1by1 img, .image.is-5by4 img, .image.is-4by3 img, .image.is-3by2 img, .image.is-5by3 img, .image.is-16by9 img, .image.is-2by1 img, .image.is-3by1 img, .image.is-4by5 img, .image.is-3by4 img, .image.is-2by3 img, .image.is-3by5 img, .image.is-9by16 img, .image.is-1by2 img, .image.is-1by3 img {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.input,
+.textarea, .file-cta,
+.file-name, .button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: calc(0.625em - 1px);
+  padding-right: calc(0.625em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: top; }
+  .input:focus,
+  .textarea:focus, .file-cta:focus,
+  .file-name:focus, .button:focus, .is-focused.input,
+  .is-focused.textarea, .is-focused.file-cta,
+  .is-focused.file-name, .is-focused.button, .input:active,
+  .textarea:active, .file-cta:active,
+  .file-name:active, .button:active, .is-active.input,
+  .is-active.textarea, .is-active.file-cta,
+  .is-active.file-name, .is-active.button {
+    outline: none; }
+  .input[disabled],
+  .textarea[disabled], .file-cta[disabled],
+  .file-name[disabled], .button[disabled] {
+    cursor: not-allowed; }
+
+.blog-content {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media screen and (min-width: 801px) and (max-width: 1081px) {
+    .blog-content {
+      padding: 0px;
+      display: flex;
+      flex-direction: row; } }
+
+.blog-post {
+  color: #000;
+  display: flex;
+  margin-bottom: 1rem; }
+  .blog-post-image {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    background: #219f93; }
+    .blog-post-image img {
+      width: 100px;
+      height: 100%;
+      object-fit: cover; }
+  .blog-post-content {
+    padding: 0.2rem;
+    background-color: #cee6e4; }
+    .blog-post-content--date {
+      font-size: 12px;
+      padding: 0.2rem; }
+    .blog-post-content--name {
+      font-size: 13px;
+      padding: 0.2rem; }
+    .blog-post-content--perex {
+      color: #000;
+      font-size: 12px;
+      padding: 0.2rem; }
+    .blog-post-content .button {
+      margin: 0.2rem 0rem; }
 
 @keyframes spinAround {
   from {

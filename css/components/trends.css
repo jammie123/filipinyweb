@@ -43,6 +43,8 @@
     max-width: 500px; }
     .trends-card--activities {
       max-width: inherit; }
+    .trends-card--blog {
+      max-width: initial; }
     @media screen and (max-width: 800px) {
       .trends-card {
         margin: 0px;
@@ -66,6 +68,8 @@
     .trends-card-head {
       display: flex;
       flex-direction: column; }
+      .trends-card-head--blog {
+        padding: 1.5rem 1.5rem !important; }
     .trends-card-body {
       margin-top: 38px;
       display: flex; }
@@ -73,6 +77,9 @@
         .trends-card-body {
           flex-direction: column;
           align-items: center; } }
+    .trends-card-img--blog img {
+      width: 100% !important;
+      height: 100% !important; }
     .trends-card-img img {
       width: 200px;
       height: 200px; }
@@ -80,6 +87,7 @@
       font-size: 14px;
       font-weight: 300;
       margin-left: 26px;
+      padding-top: 1rem;
       display: flex;
       flex-direction: column; }
       @media screen and (max-width: 800px) {

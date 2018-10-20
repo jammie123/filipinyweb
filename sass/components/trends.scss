@@ -8,11 +8,11 @@
     &--activities {
       padding: 2rem;
     }
-    &--hotel{
+    &--hotel {
       padding: 2rem;
       margin: 1rem 1rem 1rem 0rem;
       height: calc(100% - 2rem);
-      @include mobile{
+      @include mobile {
         margin: 0px;
       }
     }
@@ -34,6 +34,9 @@
   &-card {
     &--activities {
       max-width: inherit;
+    }
+    &--blog {
+      max-width: initial;
     }
     position: relative;
     margin-top: 79px;
@@ -71,6 +74,9 @@
     &-head {
       display: flex;
       flex-direction: column;
+      &--blog{
+        padding: 1.5rem 1.5rem !important;
+      }
     }
     &-body {
       margin-top: 38px;
@@ -81,6 +87,12 @@
       }
     }
     &-img {
+      &--blog {
+        img {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
       img {
         width: 200px;
         height: 200px;
@@ -90,6 +102,7 @@
       font-size: 14px;
       font-weight: 300;
       margin-left: 26px;
+      padding-top: 1rem;
       display: flex;
       flex-direction: column;
       @include mobile {
