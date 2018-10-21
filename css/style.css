@@ -3932,6 +3932,9 @@ a {
     right: 2rem;
     bottom: -2rem;
     margin-left: 3rem; }
+  .share--blogdetail {
+    margin: 2rem;
+    text-align: right; }
 
 @keyframes spinAround {
   from {
@@ -4611,6 +4614,17 @@ a {
       @media screen and (max-width: 800px) {
         .trends-item--hotel {
           margin: 0px; } }
+    .trends-item--blogdetail {
+      color: #000;
+      display: initial;
+      padding-bottom: 1rem; }
+      .trends-item--blogdetail p {
+        margin-bottom: 1.5rem; }
+      .trends-item--blogdetail img {
+        width: 302px;
+        height: 263px;
+        float: left;
+        margin-right: 1rem; }
     @media screen and (max-width: 800px) {
       .trends-item {
         margin-top: 2rem; } }
@@ -4646,6 +4660,9 @@ a {
       font-weight: 300;
       font-size: 13px; }
       @media screen and (max-width: 800px) {
+        .trends-card-info--blogdetail {
+          justify-content: flex-start !important; } }
+      @media screen and (max-width: 800px) {
         .trends-card-info {
           justify-content: center; } }
       .trends-card-info-item {
@@ -4660,6 +4677,8 @@ a {
       flex-direction: column; }
       .trends-card-head--blog {
         padding: 1.5rem 1.5rem !important; }
+      .trends-card-head--blogdetail {
+        padding: 2.5rem 0rem; }
     .trends-card-body {
       margin-top: 38px;
       display: flex; }
@@ -5234,13 +5253,17 @@ select {
   padding-top: 0px;
   padding-bottom: 0px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
   @media screen and (min-width: 801px) and (max-width: 1081px) {
     .blog-content {
-      padding: 0px;
+      padding: 2rem 0rem;
       display: flex;
       flex-direction: row; } }
+  @media screen and (max-width: 800px) {
+    .blog-content {
+      padding: 2rem 0rem;
+      display: flex;
+      flex-direction: column; } }
 
 .blog-post {
   color: #000;
@@ -5255,8 +5278,16 @@ select {
       width: 100px;
       height: 100%;
       object-fit: cover; }
+  @media screen and (min-width: 801px) and (max-width: 1081px) {
+    .blog-post--feed {
+      margin: 0rem 0.25rem; } }
+  @media screen and (max-width: 800px) {
+    .blog-post--feed {
+      margin: 0.5rem 0rem;
+      width: 100%; } }
   .blog-post-content {
     padding: 0.2rem;
+    width: 100%;
     background-color: #cee6e4; }
     .blog-post-content--date {
       font-size: 12px;

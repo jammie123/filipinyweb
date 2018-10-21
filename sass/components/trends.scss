@@ -16,6 +16,22 @@
         margin: 0px;
       }
     }
+    &--blogdetail {
+      color: #000;
+      display: initial;
+      padding-bottom: 1rem;
+      p{
+        margin-bottom: 1.5rem;
+      }
+      img {
+        width: 302px;
+        height: 263px;
+        float: left;
+        margin-right: 1rem ;
+
+      }
+
+    }
     display: flex;
     position: relative;
     justify-content: center;
@@ -57,6 +73,11 @@
       flex-wrap: wrap;
       font-weight: 300;
       font-size: 13px;
+      &--blogdetail{
+        @include mobile {
+          justify-content: flex-start !important;
+        }
+      }
       @include mobile {
         justify-content: center;
       }
@@ -74,8 +95,11 @@
     &-head {
       display: flex;
       flex-direction: column;
-      &--blog{
+      &--blog {
         padding: 1.5rem 1.5rem !important;
+      }
+      &--blogdetail{
+        padding: 2.5rem 0rem;
       }
     }
     &-body {

@@ -5,11 +5,16 @@
     padding-bottom: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     @include tablet-only {
-      padding: 0px;
+      padding: 2rem 0rem;
       display: flex;
       flex-direction: row;
+    }
+    @include mobile {
+      padding: 2rem 0rem;
+      display: flex;
+      flex-direction: column;
     }
   }
   &-post {
@@ -28,9 +33,17 @@
       }
     }
     &--feed {
+      @include tablet-only {
+        margin: 0rem 0.25rem;
+      }
+      @include mobile {
+        margin: 0.5rem 0rem;
+        width: 100%;
+      }
     }
     &-content {
       padding: 0.2rem;
+      width: 100%;
       background-color: #cee6e4;
       &--date {
         font-size: 12px;
