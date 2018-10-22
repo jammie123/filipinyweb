@@ -81,13 +81,14 @@
           padding-left: 0px; }
     .trends-card-head {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-top: 2rem; }
       .trends-card-head--blog {
         padding: 1.5rem 1.5rem !important; }
       .trends-card-head--blogdetail {
         padding: 2.5rem 0rem; }
     .trends-card-body {
-      margin-top: 38px;
+      margin-top: 1rem;
       display: flex; }
       @media screen and (max-width: 800px) {
         .trends-card-body {
@@ -103,7 +104,6 @@
       font-size: 14px;
       font-weight: 300;
       margin-left: 26px;
-      padding-top: 1rem;
       display: flex;
       flex-direction: column; }
       @media screen and (max-width: 800px) {

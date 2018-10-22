@@ -3623,6 +3623,9 @@ a.has-text-danger:hover, a.has-text-danger:focus {
       position: absolute;
       color: white;
       z-index: 9; }
+      @media screen and (max-width: 800px) {
+        .welcome--activities-title h1 {
+          font-size: 28px; } }
       .welcome--activities-title a {
         position: absolute;
         bottom: 2rem;
@@ -3631,12 +3634,15 @@ a.has-text-danger:hover, a.has-text-danger:focus {
           .welcome--activities-title a {
             right: inherit;
             bottom: 5rem; } }
-  .welcome-title {
+  .welcome-title h1 {
     font-size: 36px; }
-    .welcome-title h2 {
-      font-family: "Alisha";
-      margin: 0px;
-      font-weight: 300; }
+    @media screen and (max-width: 800px) {
+      .welcome-title h1 {
+        font-size: 28px; } }
+  .welcome-title h2 {
+    font-family: "Alisha";
+    margin: 0px;
+    font-weight: 300; }
 
 @keyframes spinAround {
   from {
@@ -4180,15 +4186,25 @@ a {
         z-index: 100; }
   .hotel-gradient {
     position: absolute;
-    height: 5rem;
-    bottom: 0px;
-    background: rgba(255, 255, 255, 0);
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(17%, rgba(240, 240, 240, 0.17)), color-stop(100%, #f0f0f0));
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%); }
+    height: 5rem; }
+    .hotel-gradient--bottom {
+      bottom: 0px;
+      background: rgba(255, 255, 255, 0);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(17%, rgba(240, 240, 240, 0.17)), color-stop(100%, #f0f0f0));
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%); }
+    .hotel-gradient--top {
+      top: 0px;
+      background: rgba(255, 255, 255, 0);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(17%, rgba(240, 240, 240, 0.17)), color-stop(100%, #f0f0f0));
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%);
+      background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.17) 17%, #f0f0f0 100%); }
   .hotel .button-inner {
     position: absolute; }
   .hotel-content {
@@ -4674,13 +4690,14 @@ a {
           padding-left: 0px; }
     .trends-card-head {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-top: 2rem; }
       .trends-card-head--blog {
         padding: 1.5rem 1.5rem !important; }
       .trends-card-head--blogdetail {
         padding: 2.5rem 0rem; }
     .trends-card-body {
-      margin-top: 38px;
+      margin-top: 1rem;
       display: flex; }
       @media screen and (max-width: 800px) {
         .trends-card-body {
@@ -4696,7 +4713,6 @@ a {
       font-size: 14px;
       font-weight: 300;
       margin-left: 26px;
-      padding-top: 1rem;
       display: flex;
       flex-direction: column; }
       @media screen and (max-width: 800px) {

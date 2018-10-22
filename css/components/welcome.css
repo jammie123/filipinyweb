@@ -28,6 +28,9 @@
       position: absolute;
       color: white;
       z-index: 9; }
+      @media screen and (max-width: 800px) {
+        .welcome--activities-title h1 {
+          font-size: 28px; } }
       .welcome--activities-title a {
         position: absolute;
         bottom: 2rem;
@@ -36,9 +39,12 @@
           .welcome--activities-title a {
             right: inherit;
             bottom: 5rem; } }
-  .welcome-title {
+  .welcome-title h1 {
     font-size: 36px; }
-    .welcome-title h2 {
-      font-family: "Alisha";
-      margin: 0px;
-      font-weight: 300; }
+    @media screen and (max-width: 800px) {
+      .welcome-title h1 {
+        font-size: 28px; } }
+  .welcome-title h2 {
+    font-family: "Alisha";
+    margin: 0px;
+    font-weight: 300; }

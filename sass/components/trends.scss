@@ -95,6 +95,7 @@
     &-head {
       display: flex;
       flex-direction: column;
+      margin-top: 2rem;
       &--blog {
         padding: 1.5rem 1.5rem !important;
       }
@@ -103,7 +104,7 @@
       }
     }
     &-body {
-      margin-top: 38px;
+      margin-top: 1rem;
       display: flex;
       @include mobile {
         flex-direction: column;
@@ -126,7 +127,6 @@
       font-size: 14px;
       font-weight: 300;
       margin-left: 26px;
-      padding-top: 1rem;
       display: flex;
       flex-direction: column;
       @include mobile {
