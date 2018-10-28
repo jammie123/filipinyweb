@@ -66,6 +66,8 @@
       flex-wrap: wrap;
       font-weight: 300;
       font-size: 13px; }
+      .trends-card-info a {
+        color: #fff; }
       @media screen and (max-width: 800px) {
         .trends-card-info--blogdetail {
           justify-content: flex-start !important; } }

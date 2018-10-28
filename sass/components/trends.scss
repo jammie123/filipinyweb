@@ -73,6 +73,9 @@
       flex-wrap: wrap;
       font-weight: 300;
       font-size: 13px;
+      a{
+        color: #fff;
+      }
       &--blogdetail{
         @include mobile {
           justify-content: flex-start !important;
