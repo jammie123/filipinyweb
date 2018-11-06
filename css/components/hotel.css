@@ -7,7 +7,7 @@
 .hotel {
   text-align: center; }
   .hotel--home {
-    min-height: 700px;
+    min-height: 800px;
     background: url("../../img/dopozaditophotels.jpg");
     background-size: cover;
     background-position: 50% 50%;
@@ -63,6 +63,7 @@
         position: absolute;
         top: 0px;
         width: 100%;
+        z-index: 9;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -212,6 +213,66 @@
     background-size: contain;
     width: 29px;
     height: 29px; }
+  .detailhotel-equip-item--swimming {
+    background: url("../../img/001-swimming-pool.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--dog {
+    background: url("../../img/002-dog.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--shopping {
+    background: url("../../img/003-shopping-bag.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--windsurf {
+    background: url("../../img/004-windsurf-silhouette.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--bus {
+    background: url("../../img/005-front-of-bus.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--restaurant {
+    background: url("../../img/006-restaurant.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--kids {
+    background: url("../../img/007-kids-couple.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--creditcard {
+    background: url("../../img/008-credit-cards-payment.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--tennis {
+    background: url("../../img/009-racket-and-tennis-ball.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--golf {
+    background: url("../../img/010-golf-flag-and-field.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--jewel {
+    background: url("../../img/011-jewel.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--washing {
+    background: url("../../img/012-washing-machine.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
 
 .rating-star {
   background: url("../../img/star_gold.svg");
@@ -236,3 +297,6 @@
 .arrowright {
   top: 40%;
   right: -2.5rem; }
+
+.imagecarousel-item:hover {
+  cursor: pointer; }

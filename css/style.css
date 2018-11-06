@@ -3231,7 +3231,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   white-space: nowrap; }
   .breadcrumb a {
     align-items: center;
-    color: #3273dc;
+    color: #fdc61d;
     display: flex;
     justify-content: center;
     padding: 0 0.75em; }
@@ -3836,6 +3836,9 @@ a {
   border-right: 1px solid transparent;
   border-bottom: 1px solid transparent; }
 
+.link-active {
+  color: #fdc61d; }
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -4173,7 +4176,7 @@ a {
 .hotel {
   text-align: center; }
   .hotel--home {
-    min-height: 700px;
+    min-height: 800px;
     background: url("../../img/dopozaditophotels.jpg");
     background-size: cover;
     background-position: 50% 50%;
@@ -4229,6 +4232,7 @@ a {
         position: absolute;
         top: 0px;
         width: 100%;
+        z-index: 9;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -4378,6 +4382,66 @@ a {
     background-size: contain;
     width: 29px;
     height: 29px; }
+  .detailhotel-equip-item--swimming {
+    background: url("../../img/001-swimming-pool.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--dog {
+    background: url("../../img/002-dog.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--shopping {
+    background: url("../../img/003-shopping-bag.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--windsurf {
+    background: url("../../img/004-windsurf-silhouette.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--bus {
+    background: url("../../img/005-front-of-bus.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--restaurant {
+    background: url("../../img/006-restaurant.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--kids {
+    background: url("../../img/007-kids-couple.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--creditcard {
+    background: url("../../img/008-credit-cards-payment.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--tennis {
+    background: url("../../img/009-racket-and-tennis-ball.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--golf {
+    background: url("../../img/010-golf-flag-and-field.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--jewel {
+    background: url("../../img/011-jewel.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
+  .detailhotel-equip-item--washing {
+    background: url("../../img/012-washing-machine.svg");
+    background-size: contain;
+    width: 29px;
+    height: 29px; }
 
 .rating-star {
   background: url("../../img/star_gold.svg");
@@ -4403,8 +4467,14 @@ a {
   top: 40%;
   right: -2.5rem; }
 
+.imagecarousel-item:hover {
+  cursor: pointer; }
+
 .inspiration {
-  margin-bottom: 116px;
+  position: relative;
+  top: -6rem;
+  padding-top: 2rem;
+  background: rgba(240, 240, 240, 0.5);
   text-align: center; }
   .inspiration-content-item {
     position: relative; }
@@ -4930,16 +5000,20 @@ a {
 /* Defines the width of the carousel and centers it on the page */
 .slick-slider {
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  height: 500px; }
 
 .object-fit_cover {
   object-fit: cover; }
+
+.slick-track {
+  height: 500px; }
 
 /* The width of each slide */
 .slick-slider img {
   max-width: 100%;
   object-fit: cover;
-  max-height: 765px !important;
+  height: 100%;
   min-height: 365px !important; }
 
 /* Color of the arrows */

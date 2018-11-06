@@ -1,5 +1,8 @@
 .inspiration {
-  margin-bottom: 116px;
+  position: relative;
+  top: -6rem;
+  padding-top: 2rem;
+  background: rgba(240, 240, 240, 0.5);
   text-align: center; }
   .inspiration-content-item {
     position: relative; }

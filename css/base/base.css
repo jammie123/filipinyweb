@@ -99,3 +99,6 @@ a {
 .br-white {
   border-right: 1px solid transparent;
   border-bottom: 1px solid transparent; }
+
+.link-active {
+  color: #fdc61d; }
