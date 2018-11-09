@@ -46,7 +46,7 @@ select {
 
 /* Arrow */
 .select::after {
-  content: "\f107";
+  content: "\f078";
   font-family: "FontAwesome";
   position: absolute;
   top: 0;
