@@ -45,10 +45,10 @@
 
         });
 
-        
+
     </script>
-        <!-- FACEBOOK SHARE -->
-        <script>(function (d, s, id) {
+    <!-- FACEBOOK SHARE -->
+    <script>(function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
@@ -343,26 +343,42 @@
                             <p class="detailhotel-review-title ">8.3</p>
                         </div>
                         <div class="detailhotel-review-slider">
-                            <div class="detailhotel-review-stars">
-                                <div class="rating-star"></div>
-                                <div class="rating-star"></div>
-                                <div class="rating-star"></div>
-                                <div class="rating-star"></div>
+                            <div class="slick-slider">
+
+                                <div class="detailhotel-review-slider-item">
+                                    <div class="detailhotel-review-stars">
+                                        <div class="rating-star"></div>
+                                        <div class="rating-star"></div>
+                                        <div class="rating-star"></div>
+                                        <div class="rating-star"></div>
+                                    </div>
+                                    <div class="detailhotel-review-content">
+                                        <div class="detailhotel-review-comment">
+                                            <p class="is-green">Peter, Singapore</p>
+                                            <p class="is-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam rhoncus aliquam
+                                                metus. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detailhotel-review-slider-item">
+                                    <div class="detailhotel-review-stars">
+                                        <div class="rating-star"></div>
+                                        <div class="rating-star"></div>
+                                        <div class="rating-star"></div>
+                                        <div class="rating-star"></div>
+                                    </div>
+                                    <div class="detailhotel-review-content">
+                                        <div class="detailhotel-review-comment">
+                                            <p class="is-green">Peter, Singapore</p>
+                                            <p class="is-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam rhoncus aliquam
+                                                metus. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="detailhotel-review-content">
-                                <div class="arrowleft">
-                                    <i class="fas fa-chevron-left is-yellow"></i>
-                                </div>
-                                <div class="arrowright">
-                                    <i class="fas fa-chevron-right is-yellow"></i>
-                                </div>
-                                <div class="detailhotel-review-comment">
-                                    <p class="is-green">Peter, Singapore</p>
-                                    <p class="is-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam rhoncus aliquam metus.
-                                        Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies
-                                    </p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <section class="detailhotel-landmark is-hidden-mobile">
@@ -522,7 +538,9 @@
             slidesToShow: 1, // Shows a three slides at a time
             slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
             arrows: true, // Adds arrows to sides of slider
-            dots: true // Adds the dots on the bottom
+            nextArrow: '<div class="arrowright"> <i class="fas fa-chevron-right is-yellow"></i></div>',
+            prevArrow: '<div class="arrowleft"> <i class="fas fa-chevron-left is-yellow"></i></div>',
+            // dots: false // Adds the dots on the bottom
         });</script>
 
 </body>

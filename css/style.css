@@ -3612,7 +3612,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .welcome--destination {
     background-image: url("../../img/detaildest.png"); }
   .welcome--activities {
-    position: relative; }
+    position: relative;
+    height: 500px !important; }
     .welcome--activities-title {
       display: flex;
       width: 100%;
@@ -4339,6 +4340,10 @@ a {
     position: relative;
     width: 100%;
     background-color: #303030; }
+    .detailhotel-review-slider .slick-slider {
+      width: 100%; }
+    .detailhotel-review-slider-item {
+      width: 100%; }
   .detailhotel-review-stars {
     display: flex;
     justify-content: center;
@@ -5088,15 +5093,10 @@ a {
 
 /* Defines the width of the carousel and centers it on the page */
 .slick-slider {
-  margin: 0 auto;
-  width: 100%;
-  height: 500px; }
+  margin: 0 auto; }
 
 .object-fit_cover {
   object-fit: cover; }
-
-.slick-track {
-  height: 500px; }
 
 /* The width of each slide */
 .slick-slider img {

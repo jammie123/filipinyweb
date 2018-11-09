@@ -281,6 +281,12 @@
       position: relative;
       width: 100%;
       background-color: #303030;
+      .slick-slider{
+        width: 100%;
+      }
+      &-item{
+        width: 100%;
+      }
     }
     &-stars {
       display: flex;

@@ -17,7 +17,8 @@
   .welcome--destination {
     background-image: url("../../img/detaildest.png"); }
   .welcome--activities {
-    position: relative; }
+    position: relative;
+    height: 500px !important; }
     .welcome--activities-title {
       display: flex;
       width: 100%;

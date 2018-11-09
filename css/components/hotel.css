@@ -170,6 +170,10 @@
     position: relative;
     width: 100%;
     background-color: #303030; }
+    .detailhotel-review-slider .slick-slider {
+      width: 100%; }
+    .detailhotel-review-slider-item {
+      width: 100%; }
   .detailhotel-review-stars {
     display: flex;
     justify-content: center;
