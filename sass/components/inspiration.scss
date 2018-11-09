@@ -1,6 +1,13 @@
+@import "bulma/sass/utilities/_all";
 .inspiration {
   position: relative;
-  top: -2rem;
+  top: -6rem !important;
+  @include mobile {
+    top: 0rem !important;
+  }
+  @include tablet {
+    top: -4rem !important;
+  }
   padding-top: 2rem;
   background: hsla(0, 0%, 94%, 0.5);
   text-align: center;

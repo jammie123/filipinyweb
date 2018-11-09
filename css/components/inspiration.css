@@ -1,9 +1,21 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
 .inspiration {
   position: relative;
-  top: -2rem;
+  top: -6rem !important;
   padding-top: 2rem;
   background: rgba(240, 240, 240, 0.5);
   text-align: center; }
+  @media screen and (max-width: 800px) {
+    .inspiration {
+      top: 0rem !important; } }
+  @media screen and (min-width: 801px), print {
+    .inspiration {
+      top: -4rem !important; } }
   .inspiration-content-item {
     position: relative; }
     .inspiration-content-item-image img {

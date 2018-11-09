@@ -1,7 +1,13 @@
 @import "bulma/sass/utilities/_all";
 .hotel {
   &--home {
-    min-height: 700px;
+    min-height: 700px !important;
+    @include mobile {
+      min-height: 600px !important;
+    }
+    @include tablet {
+      min-height: 600px !important;
+    }
     background: url("../../img/do_pozadi_HP2.jpg");
     background-size: cover;
     background-position: 50% 50%;
