@@ -14,6 +14,8 @@
     justify-content: center; }
     .trends-item--activities {
       padding: 2rem; }
+    .trends-item--archive {
+      border-bottom: 1px solid white; }
     .trends-item--hotel {
       padding: 2rem;
       margin: 1rem 1rem 1rem 0rem;
@@ -50,12 +52,17 @@
     margin-right: 32px;
     margin-left: 32px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 500px; }
+    .trends-card-title h4 {
+      margin: .5rem 0rem; }
     .trends-card--activities {
       max-width: inherit; }
     .trends-card--blog {
       max-width: initial; }
+    .trends-card--archive {
+      max-width: initial;
+      margin: inherit; }
     @media screen and (max-width: 800px) {
       .trends-card {
         margin: 0px;
@@ -89,6 +96,8 @@
         padding: 1.5rem 1.5rem !important; }
       .trends-card-head--blogdetail {
         padding: 2.5rem 0rem; }
+      .trends-card-head--archive {
+        margin: 0px; }
     .trends-card-body {
       margin-top: 1rem;
       display: flex; }
@@ -96,6 +105,9 @@
         .trends-card-body {
           flex-direction: column;
           align-items: center; } }
+      .trends-card-body--archive {
+        flex-direction: column;
+        margin-left: 1rem; }
     .trends-card-img--blog img {
       width: 100% !important;
       height: 100% !important; }
@@ -115,3 +127,5 @@
           margin-top: 32px; } }
       .trends-card-desc-more {
         margin-top: 37px; }
+        .trends-card-desc-more--archive {
+          margin-top: 1rem; }
