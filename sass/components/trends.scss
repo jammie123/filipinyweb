@@ -10,6 +10,7 @@
     }
     &--archive {
       border-bottom: 1px solid white;
+      margin-top: 0rem !important;
     }
     &--hotel {
       padding: 2rem;
@@ -51,8 +52,8 @@
     }
   }
   &-card {
-    
     &-title{
+      width: 100%;
       h4{
         margin: .5rem 0rem;
       }
@@ -66,7 +67,9 @@
     &--archive {
       max-width: initial;
       margin: inherit;
-     
+      @include mobile {
+        margin: 1rem 0rem !important;
+      }
     }
     position: relative;
     margin-top: 79px;

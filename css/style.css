@@ -4788,7 +4788,8 @@ a {
     .trends-item--activities {
       padding: 2rem; }
     .trends-item--archive {
-      border-bottom: 1px solid white; }
+      border-bottom: 1px solid white;
+      margin-top: 0rem !important; }
     .trends-item--hotel {
       padding: 2rem;
       margin: 1rem 1rem 1rem 0rem;
@@ -4827,8 +4828,10 @@ a {
     display: flex;
     flex-direction: row;
     max-width: 500px; }
-    .trends-card-title h4 {
-      margin: .5rem 0rem; }
+    .trends-card-title {
+      width: 100%; }
+      .trends-card-title h4 {
+        margin: .5rem 0rem; }
     .trends-card--activities {
       max-width: inherit; }
     .trends-card--blog {
@@ -4836,6 +4839,9 @@ a {
     .trends-card--archive {
       max-width: initial;
       margin: inherit; }
+      @media screen and (max-width: 800px) {
+        .trends-card--archive {
+          margin: 1rem 0rem !important; } }
     @media screen and (max-width: 800px) {
       .trends-card {
         margin: 0px;
