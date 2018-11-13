@@ -4789,7 +4789,8 @@ a {
       padding: 2rem; }
     .trends-item--archive {
       border-bottom: 1px solid white;
-      margin-top: 0rem !important; }
+      margin-top: 0rem !important;
+      justify-content: flex-start; }
     .trends-item--hotel {
       padding: 2rem;
       margin: 1rem 1rem 1rem 0rem;
@@ -4826,7 +4827,7 @@ a {
     margin-right: 32px;
     margin-left: 32px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 500px; }
     .trends-card-title {
       width: 100%; }
@@ -4838,6 +4839,8 @@ a {
       max-width: initial; }
     .trends-card--archive {
       max-width: initial;
+      display: flex;
+      flex-direction: row;
       margin: inherit; }
       @media screen and (max-width: 800px) {
         .trends-card--archive {
@@ -4869,8 +4872,7 @@ a {
           padding-left: 0px; }
     .trends-card-head {
       display: flex;
-      flex-direction: column;
-      margin-top: 2rem; }
+      flex-direction: column; }
       .trends-card-head--blog {
         padding: 1.5rem 1.5rem !important; }
       .trends-card-head--blogdetail {
