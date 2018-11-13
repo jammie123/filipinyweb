@@ -46,8 +46,9 @@ select {
 
 /* Arrow */
 .select::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   content: "\f078";
-  font-family: "FontAwesome";
   position: absolute;
   top: 0;
   font-size: 14px !important;
@@ -59,4 +60,9 @@ select {
   color: white;
   text-align: center;
   background: #fdc61d;
-  pointer-events: none; }
+  pointer-events: none;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
