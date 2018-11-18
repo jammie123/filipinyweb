@@ -3641,7 +3641,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
       .welcome-title h1 {
         font-size: 28px; } }
   .welcome-title h2 {
-    font-family: "Alisha";
+    font-family: "Marck Script";
     margin: 0px;
     font-weight: 300; }
 
@@ -4787,6 +4787,10 @@ a {
     justify-content: center; }
     .trends-item--activities {
       padding: 2rem; }
+    @media screen and (max-width: 800px) {
+      .trends-item--blog {
+        width: 80% !important;
+        margin: 0px auto; } }
     .trends-item--archive {
       border-bottom: 1px solid white;
       margin-top: 0rem !important;

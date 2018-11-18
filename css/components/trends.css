@@ -14,6 +14,10 @@
     justify-content: center; }
     .trends-item--activities {
       padding: 2rem; }
+    @media screen and (max-width: 800px) {
+      .trends-item--blog {
+        width: 80% !important;
+        margin: 0px auto; } }
     .trends-item--archive {
       border-bottom: 1px solid white;
       margin-top: 0rem !important;

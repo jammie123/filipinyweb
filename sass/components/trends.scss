@@ -8,6 +8,12 @@
     &--activities {
       padding: 2rem;
     }
+    &--blog {
+      @include mobile {
+        width: 80% !important;
+        margin: 0px auto;
+      }
+    }
     &--archive {
       border-bottom: 1px solid white;
       margin-top: 0rem !important;
