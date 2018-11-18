@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/mtz5eqn.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".header-nav ul").toggleClass("is-active");
+                $(".header").toggleClass("active");
+                $(".header:not(.active)").toggleClass("active");
+
+            });
+        });
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $(".header").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $(".header").removeClass("active");
+            }
+        });
+    </script>
+    <!-- FACEBOOK SHARE -->
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v3.1&appId=1757882871202478&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <div class="header">
+            <div class="header-brand">
+                <a href="index.html">
+                    <div class="header-brand-logo">
+                        <p>
+                            Amazing Philippines
+                        </p>
+                    </div>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>
+                        <a href="homepage.html">Homepage</a>
+                    </li>
+                    <li>
+                        <a href="destinations.html">Destinations</a>
+                    </li>
+                    <li>
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                        <a href="beaches.html">Popular beaches</a>
+                    </li>
+                    <li>
+                        <a href="hotels.html">Top hotels</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <section class="welcome" style="background-image: url('img/welcome.jpg');">
+        <div class="container">
+            <div class="welcome-title">
+                <h1 class="is-white is-center fw700">Discover the most beautiful places</h1>
+                <h2 class="is-white is-center">in the Philippines!</h2>
+            </div>
+        </div>
+
+    </section>
+    <!-- END WELCOME -->
+    <section class="trends">
+        <div class="container">
+            <h2 class="is-green">News from Filippines</h2>
+            <div class="trends-content columns is-multiline">
+                <div class="trends-item column is-8-desktop is-12-tablet">
+                    <div class="trends-card trends-card--blog is-marginless">
+                        <div class="columns">
+                            <div class="trends-card-head trends-card-head--blog column is-6 is-paddingless bg-green">
+                                <div class="trends-card-title">
+                                    <h3 class="fw700">PALAWAN IS CLOSED LOREM IPSUM DOLOR SIT
+                                    </h3>
+                                </div>
+                                <div class="trends-card-info">
+                                    <div class="trends-card-info-item">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-clock"></i>
+                                        </span>
+                                        3.9.2010
+
+                                    </div>
+                                    <div class="trends-card-info-item">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        Adam Kudrna
+                                    </div>
+                                    <div class="trends-card-info-item">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-folder-open"></i>
+                                        </span>
+                                        Palawan
+                                    </div>
+                                    <div class="trends-card-info-item">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-comments"></i>
+                                        </span>
+                                        16 comments
+                                    </div>
+
+                                </div>
+                                <div class="trends-card-desc is-marginless">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quae nesciunt ullam sit, molestias, provident qui aut modi nostrum
+                                        amet placeat voluptatibus voluptatem facere nisi. Culpa assumenda architecto et harum?
+                                    </p>
+                                    <div class="trends-card-desc-more">
+                                        <a href="blogdetail.html" class="is-yellow">read mode ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trends-card-img trends-card-img--blog column is-6 is-paddingless">
+                                <img src="https://bulma.io/images/placeholders/256x256.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content column is-4-desktop is-12-tablet">
+                    <div class="blog-post blog-post--feed">
+                        <div class="blog-post-image image is-128x128">
+                            <img src="img/blog-image.png" alt="">
+                        </div>
+                        <div class="blog-post-content">
+                            <p class="blog-post-content--date">
+                                18.9.2018
+                            </p>
+                            <p class="blog-post-content--name is-green fw400">
+                                LOREM IPSUM DOLOR SIT AMETCONSECTETUER ADIPISCING ELIT LOREM
+                            </p>
+                            <p class="blog-post-content--perex">LOREM IPSUM DOLOR SIT AMETCONSECT</p>
+                            <div class="button is-small is-info">More info</div>
+                        </div>
+
+                    </div>
+                    <div class="blog-post blog-post--feed">
+                        <div class="blog-post-image image is-128x128">
+                            <img src="img/blog-image.png" alt="">
+                        </div>
+                        <div class="blog-post-content">
+                            <p class="blog-post-content--date">
+                                18.9.2018
+                            </p>
+                            <p class="blog-post-content--name is-green fw400">
+                                LOREM IPSUM DOLOR SIT AMETCONSECTETUER ADIPISCING ELIT LOREM
+                            </p>
+                            <p class="blog-post-content--perex">LOREM IPSUM DOLOR SIT AMETCONSECT</p>
+                            <div class="button is-small is-info">More info</div>
+                        </div>
+
+                    </div>
+                    <div class="blog-post blog-post--feed">
+                        <div class="blog-post-image image is-128x128">
+                            <img src="img/blog-image.png" alt="">
+                        </div>
+                        <div class="blog-post-content">
+                            <p class="blog-post-content--date">
+                                18.9.2018
+                            </p>
+                            <p class="blog-post-content--name is-green fw400">
+                                LOREM IPSUM DOLOR SIT AMETCONSECTETUER ADIPISCING ELIT LOREM
+                            </p>
+                            <p class="blog-post-content--perex">LOREM IPSUM DOLOR SIT AMETCONSECT</p>
+                            <div class="button is-small is-info">More info</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END BLOG NEWS -->
+    <section class="trends">
+        <div class="container">
+            <h2 class="is-green">Hotels & Resorts</h2>
+            <div class="trends-content columns">
+                <div class="trends-item column bg-green">
+                    <div class="trends-card">
+                        <div class="trends-card-head">
+                            <div class="trends-card-title">
+                                <h3 class="fw700">PALAWAN - TRAVEL GUIDE
+                                </h3>
+                            </div>
+                            <div class="trends-card-info">
+                                <div class="trends-card-info-item">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-clock"></i>
+                                    </span>
+                                    3.9.2010
+
+                                </div>
+                                <div class="trends-card-info-item">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    Adam Kudrna
+                                </div>
+                                <div class="trends-card-info-item">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-folder-open"></i>
+                                    </span>
+                                    Palawan
+                                </div>
+                                <div class="trends-card-info-item">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-comments"></i>
+                                    </span>
+                                    16 comments
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="trends-card-body">
+                            <div class="trends-card-img">
+                                <img src="https://bulma.io/images/placeholders/256x256.png" alt="">
+                            </div>
+                            <div class="trends-card-desc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quae nesciunt ullam sit, molestias, provident qui aut modi nostrum
+                                amet placeat voluptatibus voluptatem facere nisi. Culpa assumenda architecto et harum?
+                                <div class="trends-card-desc-more">
+                                    <a href="#" class="is-yellow">read mode ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trends-item column bg-green2">
+                    <div class="trends-item"> </div>
+                    <div class="trends-card">
+                        <div class="trends-card-head">
+                            <div class="trends-card-title">
+                                <h3 class="fw700">PALAWAN - TRAVEL GUIDE
+                                </h3>
+                            </div>
+                            <div class="trends-card-info">
+                                <div class="trends-card-info-item">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-clock"></i>
+                                    </span>
+                                    3.9.2010
+
+                                </div>
+                                <div class="trends-card-info-item">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    Adam Kudrna
+                                </div>
+                                <div class="trends-card-info-item">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-folder-open"></i>
+                                    </span>
+                                    Palawan
+                                </div>
+                                <div class="trends-card-info-item">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-comments"></i>
+                                    </span>
+                                    16 comments
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="trends-card-body">
+                            <div class="trends-card-img">
+                                <img src="https://bulma.io/images/placeholders/256x256.png" alt="">
+                            </div>
+                            <div class="trends-card-desc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quae nesciunt ullam sit, molestias, provident qui aut modi nostrum
+                                amet placeat voluptatibus voluptatem facere nisi. Culpa assumenda architecto et harum?
+                                <div class="trends-card-desc-more">
+                                    <a href="#" class="is-yellow">read mode ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END HOTELS -->
+    <section class="trends">
+        <div class="container">
+            <h2 class="is-green">Tourist Guide</h2>
+            <div class="trends-content columns is-multiline">
+                <div class="trends-item column is-8-desktop is-12-tablet">
+                    <div class="trends-card trends-card--blog is-marginless">
+                        <div class="columns">
+                            <div class="trends-card-head trends-card-head--blog column is-6 is-paddingless bg-green">
+                                <div class="trends-card-title">
+                                    <h3 class="fw700">PALAWAN IS CLOSED LOREM IPSUM DOLOR SIT
+                                    </h3>
+                                </div>
+                                <div class="trends-card-info">
+                                    <div class="trends-card-info-item">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-clock"></i>
+                                        </span>
+                                        3.9.2010
+
+                                    </div>
+                                    <div class="trends-card-info-item">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        Adam Kudrna
+                                    </div>
+                                    <div class="trends-card-info-item">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-folder-open"></i>
+                                        </span>
+                                        Palawan
+                                    </div>
+                                    <div class="trends-card-info-item">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-comments"></i>
+                                        </span>
+                                        16 comments
+                                    </div>
+
+                                </div>
+                                <div class="trends-card-desc is-marginless">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quae nesciunt ullam sit, molestias, provident qui aut modi nostrum
+                                        amet placeat voluptatibus voluptatem facere nisi. Culpa assumenda architecto et harum?
+                                    </p>
+                                    <div class="trends-card-desc-more">
+                                        <a href="#" class="is-yellow">read mode ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trends-card-img trends-card-img--blog column is-6 is-paddingless">
+                                <img src="https://bulma.io/images/placeholders/256x256.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content column is-4-desktop is-12-tablet">
+                    <div class="blog-post blog-post--feed">
+                        <div class="blog-post-image ">
+                            <img src="img/blog-image.png" alt="">
+                        </div>
+                        <div class="blog-post-content">
+                            <p class="blog-post-content--date">
+                                18.9.2018
+                            </p>
+                            <p class="blog-post-content--name is-green fw400">
+                                LOREM IPSUM DOLOR SIT AMETCONSECTETUER ADIPISCING ELIT LOREM
+                            </p>
+                            <p class="blog-post-content--perex">LOREM IPSUM DOLOR SIT AMETCONSECT</p>
+                            <div class="button is-small is-info">More info</div>
+                        </div>
+
+                    </div>
+                    <div class="blog-post blog-post--feed">
+                        <div class="blog-post-image ">
+                            <img src="img/blog-image.png" alt="">
+                        </div>
+                        <div class="blog-post-content">
+                            <p class="blog-post-content--date">
+                                18.9.2018
+                            </p>
+                            <p class="blog-post-content--name is-green fw400">
+                                LOREM IPSUM DOLOR SIT AMETCONSECTETUER ADIPISCING ELIT LOREM
+                            </p>
+                            <p class="blog-post-content--perex">LOREM IPSUM DOLOR SIT AMETCONSECT</p>
+                            <div class="button is-small is-info">More info</div>
+                        </div>
+
+                    </div>
+                    <div class="blog-post blog-post--feed">
+                        <div class="blog-post-image ">
+                            <img src="img/blog-image.png" alt="">
+                        </div>
+                        <div class="blog-post-content">
+                            <p class="blog-post-content--date">
+                                18.9.2018
+                            </p>
+                            <p class="blog-post-content--name is-green fw400">
+                                LOREM IPSUM DOLOR SIT AMETCONSECTETUER ADIPISCING ELIT LOREM
+                            </p>
+                            <p class="blog-post-content--perex">LOREM IPSUM DOLOR SIT AMETCONSECT</p>
+                            <div class="button is-small is-info">More info</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="is-center">
+            <a href="" class="button is-info">Next</a>
+        </div>
+        <div class="hr_4"></div>
+    </section>
+    <!-- END BLOG NEWS -->
+
+    <section class="newsleter">
+        <h2 class="is-center is-white">Would you like information about new amazing places?</h2>
+        <div class="newsleter-content">
+            <div class="field has-addons">
+                <div class="control has-icons-left is-expanded">
+                    <input class="input is-medium" type="text" placeholder="your e-mail">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <div class="control">
+                    <a class="button is-medium is-info is-upper">
+                        submit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END NEWSLETTER -->
+    <footer class="footer">
+        <section class="social-icon">
+            <div class="fb"></div>
+            <div class="insta"></div>
+        </section>
+        <div class="footer-content">
+            <div class="footer-content-item">
+                <a href="" class="is-white">email@amazingphilippines.uk</a>
+            </div>
+            <div class="footer-content-item">
+                <a href="" class="is-white">Business conditions</a>
+            </div>
+            <div class="footer-content-item footer-content-item--copy">
+                Copyright © 2018 Amazing Philippines | Designed by
+                <a href="www.navrhywebu.cz">Jana Jonášová</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

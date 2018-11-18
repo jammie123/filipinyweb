@@ -5,32 +5,22 @@
     transform: rotate(359deg); } }
 
 .blog-content {
-  padding-top: 0px;
-  padding-bottom: 0px;
   display: flex;
   flex-direction: column; }
-  @media screen and (min-width: 801px) and (max-width: 1081px) {
-    .blog-content {
-      padding: 2rem 0rem;
-      display: flex;
-      flex-direction: row; } }
-  @media screen and (max-width: 800px) {
-    .blog-content {
-      padding: 2rem 0rem;
-      display: flex;
-      flex-direction: column; } }
 
 .blog-post {
   color: #000;
   display: flex;
   margin-bottom: 1rem; }
+  .blog-post:last-child {
+    margin-bottom: 0rem; }
   .blog-post-image {
     padding: 0.5rem;
     display: flex;
     align-items: center;
     background: #219f93; }
     .blog-post-image img {
-      width: 100px;
+      width: 100%;
       height: 100%;
       object-fit: cover; }
   @media screen and (min-width: 801px) and (max-width: 1081px) {
@@ -42,17 +32,41 @@
       width: 100%; } }
   .blog-post-content {
     padding: 0.2rem;
-    width: 100%;
+    width: calc(100% - 116px);
     background-color: #cee6e4; }
     .blog-post-content--date {
       font-size: 12px;
       padding: 0.2rem; }
     .blog-post-content--name {
       font-size: 13px;
-      padding: 0.2rem; }
+      padding: 0.2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
     .blog-post-content--perex {
       color: #000;
       font-size: 12px;
-      padding: 0.2rem; }
+      padding: 0.2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      @media screen and (min-width: 801px) and (max-width: 1081px) {
+        .blog-post-content--perex {
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          white-space: inherit;
+          text-overflow: ellipsis;
+          line-height: 16px;
+          display: -webkit-box; } }
+      @media screen and (max-width: 800px) {
+        .blog-post-content--perex {
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          white-space: inherit;
+          text-overflow: ellipsis;
+          line-height: 16px;
+          display: -webkit-box; } }
     .blog-post-content .button {
       margin: 0.2rem 0rem; }
